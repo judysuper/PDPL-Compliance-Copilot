@@ -1,0 +1,25 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets and API keys
+.env
+.env.*
+!.env.example
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Local model files
+*.pt
+*.pth
+*.safetensors
+
+# Local databases
+chroma_db/
+*.sqlite3
