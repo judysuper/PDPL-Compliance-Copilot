@@ -1,0 +1,22 @@
+{
+  "generated_at_local": "2026-10-17T19:51:14",
+  "counts": {
+    "total": 60,
+    "arabic": 42,
+    "english": 18,
+    "scenario": 35,
+    "unanswerable": 10
+  },
+  "legal_source_record_counts": {
+    "pdpl_ar": 43,
+    "pdpl_en": 43,
+    "implementing_ar": 38,
+    "implementing_en": 38,
+    "transfer_ar": 9,
+    "transfer_en": 9
+  },
+  "automated_issue_count": 0,
+  "possible_similar_question_pairs": 0,
+  "review_file_status": "Existing human review preserved (not overwritten)",
+  "important_note": "Automated validation does not verify legal correctness, adequacy of cited evidence, source currency, or true unanswerability. Human review is required."
+}
