@@ -1,0 +1,84 @@
+PDPL COMPLIANCE COPILOT
+FINAL LEGAL DATA VALIDATION REPORT
+==================================
+
+Generated: 2026-10-16 01:04:59
+
+1. DATASET OVERVIEW
+-------------------
+Total CSV files: 6
+Total article records: 180
+
+- PDPL Arabic: 43 articles
+- PDPL English: 43 articles
+- Implementing Regulations Arabic: 38 articles
+- Implementing Regulations English: 38 articles
+- Transfer Regulations Arabic: 9 articles
+- Transfer Regulations English: 9 articles
+
+2. STRUCTURAL QUALITY CHECK
+---------------------------
+Report: csv_quality_report.txt
+
+All six CSV files passed the configured structural checks.
+No duplicate full rows, duplicate article numbers, invalid article
+numbers, or suspicious text markers were reported.
+
+Warnings:
+- PDPL article_title is empty for all 43 articles in both languages.
+- Article 32 is short because its text states that it is repealed.
+- These observations do not automatically indicate data errors.
+
+3. ARTICLE NUMBERING AND SOURCE COMPARISON
+------------------------------------------
+PDPL English:
+- TXT articles: 43
+- CSV articles: 43
+- Result: PASS
+
+PDPL Arabic:
+- TXT/CSV comparison previously reported 43 matching articles.
+- Result: PASS, based on the earlier comparison results.
+
+Implementing Regulations Arabic:
+- TXT headings: 38
+- CSV rows: 38
+- Missing, extra, or duplicate article numbers: none
+- Result: PASS
+
+Implementing Regulations English:
+- TXT headings: 38
+- CSV rows: 38
+- Missing, extra, or duplicate article numbers: none
+- Result: PASS
+
+Transfer Regulations Arabic:
+- TXT articles: 9
+- CSV rows: 9
+- All 9 articles matched after comparison normalization.
+- Result: PASS
+
+Transfer Regulations English:
+- TXT articles: 9
+- CSV rows: 9
+- All 9 articles matched after comparison normalization.
+- Result: PASS
+
+4. IMPORTANT LIMITATIONS
+------------------------
+- Structural checks do not independently verify legal meaning.
+- Text comparison normalizes formatting and known page/footer artifacts.
+- The report does not certify the legal accuracy of the source documents.
+- Empty PDPL titles were not filled with invented titles.
+- No source CSV or TXT files were modified by this report generator.
+
+5. OVERALL STATUS
+-----------------
+The six CSV files passed the configured structural checks.
+The recorded article-number and text-comparison checks passed.
+
+Before final legal-data sign-off, retain the original official sources
+and review any future changes against those sources.
+
+This report summarizes recorded checks; it does not replace the
+individual detailed reports.
