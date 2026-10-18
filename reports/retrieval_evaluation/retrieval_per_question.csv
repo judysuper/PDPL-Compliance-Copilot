@@ -1,0 +1,101 @@
+﻿question_id,language,method,gold_article,retrieved_top5,recall_at_5,reciprocal_rank_at_5,first_correct_rank
+Q001,ar,BM25,pdpl:1,implementing:32 | pdpl:2 | pdpl:15 | implementing:24 | pdpl:10,0.0,0.0,
+Q001,ar,Dense E5 + FAISS,pdpl:1,pdpl:30 | implementing:4 | transfer:1 | pdpl:29 | pdpl:1,1.0,0.2,5.0
+Q002,ar,BM25,pdpl:2,transfer:1 | transfer:3 | pdpl:3 | pdpl:2 | transfer:7,1.0,0.25,4.0
+Q002,ar,Dense E5 + FAISS,pdpl:2,pdpl:33 | pdpl:2 | transfer:1 | transfer:7 | implementing:17,1.0,0.5,2.0
+Q003,ar,BM25,pdpl:2,implementing:2 | pdpl:2 | pdpl:1 | implementing:4 | pdpl:5,1.0,0.5,2.0
+Q003,ar,Dense E5 + FAISS,pdpl:2,implementing:2 | pdpl:2 | pdpl:6 | pdpl:10 | implementing:18,1.0,0.5,2.0
+Q004,ar,BM25,pdpl:4,implementing:13 | pdpl:4 | implementing:3 | implementing:4 | implementing:6,1.0,0.5,2.0
+Q004,ar,Dense E5 + FAISS,pdpl:4,pdpl:4 | implementing:5 | implementing:6 | implementing:3 | implementing:8,1.0,1.0,1.0
+Q005,ar,BM25,pdpl:5,implementing:12 | pdpl:5 | pdpl:30 | pdpl:35 | implementing:11,1.0,0.5,2.0
+Q005,ar,Dense E5 + FAISS,pdpl:5,implementing:12 | implementing:11 | pdpl:5 | pdpl:6 | implementing:3,1.0,0.3333333333333333,3.0
+Q006,ar,BM25,pdpl:6,implementing:11 | implementing:1 | transfer:5 | implementing:4 | implementing:13,0.0,0.0,
+Q006,ar,Dense E5 + FAISS,pdpl:6,implementing:11 | pdpl:6 | implementing:12 | pdpl:27 | pdpl:5,1.0,0.5,2.0
+Q007,en,BM25,pdpl:7,pdpl:7 | pdpl:10 | pdpl:1 | implementing:1 | pdpl:15,1.0,1.0,1.0
+Q007,en,Dense E5 + FAISS,pdpl:7,implementing:12 | pdpl:10 | pdpl:6 | pdpl:7 | implementing:11,1.0,0.25,4.0
+Q008,ar,BM25,pdpl:8,pdpl:30 | transfer:4 | implementing:17 | pdpl:37 | implementing:15,0.0,0.0,
+Q008,ar,Dense E5 + FAISS,pdpl:8,implementing:17 | pdpl:33 | pdpl:8 | implementing:32 | pdpl:6,1.0,0.3333333333333333,3.0
+Q009,en,BM25,pdpl:9,pdpl:1 | implementing:2 | implementing:5 | implementing:6 | implementing:1,0.0,0.0,
+Q009,en,Dense E5 + FAISS,pdpl:9,implementing:5 | pdpl:10 | pdpl:15 | implementing:6 | pdpl:41,0.0,0.0,
+Q010,ar,BM25,pdpl:10,implementing:18 | pdpl:10 | implementing:21 | implementing:1 | pdpl:1,1.0,0.5,2.0
+Q010,ar,Dense E5 + FAISS,pdpl:10,pdpl:26 | pdpl:10 | implementing:2 | pdpl:27 | implementing:28,1.0,0.5,2.0
+Q011,ar,BM25,pdpl:11,pdpl:18 | pdpl:11 | implementing:19 | pdpl:31 | implementing:37,1.0,0.5,2.0
+Q011,ar,Dense E5 + FAISS,pdpl:11,pdpl:41 | pdpl:19 | implementing:3 | transfer:1 | pdpl:4,0.0,0.0,
+Q012,ar,BM25,implementing:3,pdpl:9 | pdpl:2 | pdpl:18 | implementing:3 | pdpl:30,1.0,0.25,4.0
+Q012,ar,Dense E5 + FAISS,implementing:3,implementing:3 | implementing:4 | implementing:37 | implementing:7 | implementing:6,1.0,1.0,1.0
+Q013,ar,BM25,implementing:2,implementing:2 | pdpl:2 | pdpl:20 | pdpl:33 | pdpl:1,1.0,1.0,1.0
+Q013,ar,Dense E5 + FAISS,implementing:2,implementing:2 | pdpl:2 | implementing:1 | implementing:2 | pdpl:10,1.0,1.0,1.0
+Q014,ar,BM25,implementing:4,pdpl:24 | implementing:15 | implementing:27 | pdpl:11 | implementing:4,1.0,0.2,5.0
+Q014,ar,Dense E5 + FAISS,implementing:4,implementing:1 | implementing:4 | implementing:24 | pdpl:4 | pdpl:13,1.0,0.5,2.0
+Q015,ar,BM25,implementing:6,implementing:6 | pdpl:4 | implementing:7 | implementing:32 | implementing:5,1.0,1.0,1.0
+Q015,ar,Dense E5 + FAISS,implementing:6,implementing:6 | implementing:3 | implementing:1 | pdpl:4 | transfer:1,1.0,1.0,1.0
+Q016,ar,BM25,implementing:7,pdpl:27 | pdpl:11 | transfer:7 | pdpl:29 | implementing:8,0.0,0.0,
+Q016,ar,Dense E5 + FAISS,implementing:7,implementing:7 | implementing:22 | implementing:3 | implementing:6 | pdpl:6,1.0,1.0,1.0
+Q017,ar,BM25,pdpl:12,pdpl:9 | pdpl:12 | pdpl:15 | pdpl:3 | implementing:27,1.0,0.5,2.0
+Q017,ar,Dense E5 + FAISS,pdpl:12,pdpl:12 | implementing:20 | implementing:32 | implementing:1 | implementing:33,1.0,1.0,1.0
+Q018,ar,BM25,pdpl:11,implementing:18 | implementing:21 | pdpl:4 | pdpl:11 | pdpl:18,1.0,0.25,4.0
+Q018,ar,Dense E5 + FAISS,pdpl:11,pdpl:11 | pdpl:18 | implementing:20 | pdpl:10 | implementing:19,1.0,1.0,1.0
+Q019,ar,BM25,transfer:7,transfer:7 | transfer:2 | transfer:4 | implementing:4 | pdpl:2,1.0,1.0,1.0
+Q019,ar,Dense E5 + FAISS,transfer:7,transfer:7 | pdpl:29 | transfer:1 | transfer:3 | implementing:24,1.0,1.0,1.0
+Q020,en,BM25,transfer:2,transfer:7 | transfer:1 | transfer:2 | pdpl:29 | transfer:3,1.0,0.3333333333333333,3.0
+Q020,en,Dense E5 + FAISS,transfer:2,transfer:2 | transfer:7 | transfer:1 | pdpl:29 | transfer:5,1.0,1.0,1.0
+Q021,en,BM25,transfer:6,transfer:4 | transfer:6 | pdpl:29 | transfer:1 | transfer:7,1.0,0.5,2.0
+Q021,en,Dense E5 + FAISS,transfer:6,transfer:6 | transfer:4 | transfer:1 | pdpl:29 | pdpl:8,1.0,1.0,1.0
+Q022,ar,BM25,implementing:19,implementing:3 | pdpl:34 | pdpl:31 | implementing:7 | pdpl:30,0.0,0.0,
+Q022,ar,Dense E5 + FAISS,implementing:19,implementing:28 | implementing:1 | implementing:19 | implementing:3 | implementing:18,1.0,0.3333333333333333,3.0
+Q023,ar,BM25,pdpl:12,pdpl:12 | implementing:34 | pdpl:23 | pdpl:18 | pdpl:31,1.0,1.0,1.0
+Q023,ar,Dense E5 + FAISS,pdpl:12,pdpl:12 | implementing:3 | implementing:20 | implementing:5 | implementing:8,1.0,1.0,1.0
+Q024,ar,BM25,pdpl:13,pdpl:29 | transfer:7 | transfer:1 | pdpl:13 | pdpl:10,1.0,0.25,4.0
+Q024,ar,Dense E5 + FAISS,pdpl:13,pdpl:13 | pdpl:11 | implementing:4 | pdpl:29 | implementing:15,1.0,1.0,1.0
+Q025,ar,BM25,pdpl:18,implementing:19 | pdpl:18 | pdpl:10 | implementing:21 | implementing:18,1.0,0.5,2.0
+Q025,ar,Dense E5 + FAISS,pdpl:18,pdpl:15 | pdpl:26 | pdpl:10 | pdpl:18 | pdpl:11,1.0,0.25,4.0
+Q026,ar,BM25,implementing:12,implementing:12 | implementing:11 | implementing:29 | implementing:8 | implementing:33,1.0,1.0,1.0
+Q026,ar,Dense E5 + FAISS,implementing:12,implementing:12 | implementing:11 | implementing:25 | pdpl:22 | pdpl:6,1.0,1.0,1.0
+Q027,ar,BM25,implementing:8,pdpl:4 | implementing:8 | implementing:7 | implementing:5 | implementing:1,1.0,0.5,2.0
+Q027,ar,Dense E5 + FAISS,implementing:8,implementing:8 | implementing:7 | implementing:1 | transfer:6 | pdpl:4,1.0,1.0,1.0
+Q028,ar,BM25,implementing:24,pdpl:18 | implementing:24 | implementing:4 | implementing:37 | transfer:6,1.0,0.5,2.0
+Q028,ar,Dense E5 + FAISS,implementing:24,implementing:24 | pdpl:20 | implementing:37 | implementing:24 | implementing:4,1.0,1.0,1.0
+Q029,ar,BM25,implementing:25,implementing:25 | implementing:28 | implementing:11 | implementing:32 | transfer:7,1.0,1.0,1.0
+Q029,ar,Dense E5 + FAISS,implementing:25,pdpl:22 | implementing:16 | implementing:25 | pdpl:17 | implementing:3,1.0,0.3333333333333333,3.0
+Q030,ar,BM25,transfer:7,transfer:7 | transfer:1 | pdpl:29 | pdpl:31 | implementing:16,1.0,1.0,1.0
+Q030,ar,Dense E5 + FAISS,transfer:7,transfer:7 | transfer:3 | pdpl:29 | transfer:1 | transfer:4,1.0,1.0,1.0
+Q031,ar,BM25,pdpl:19,implementing:23 | implementing:12 | implementing:17 | implementing:4 | implementing:32,0.0,0.0,
+Q031,ar,Dense E5 + FAISS,pdpl:19,pdpl:33 | implementing:17 | implementing:23 | pdpl:10 | implementing:12,0.0,0.0,
+Q042,ar,BM25,pdpl:11,implementing:7 | implementing:4 | pdpl:30 | implementing:5 | pdpl:27,0.0,0.0,
+Q042,ar,Dense E5 + FAISS,pdpl:11,implementing:3 | implementing:1 | pdpl:4 | implementing:28 | implementing:11,0.0,0.0,
+Q043,ar,BM25,implementing:7,implementing:7 | implementing:22 | pdpl:14 | pdpl:24 | pdpl:4,1.0,1.0,1.0
+Q043,ar,Dense E5 + FAISS,implementing:7,implementing:7 | implementing:22 | implementing:37 | implementing:36 | implementing:6,1.0,1.0,1.0
+Q044,ar,BM25,implementing:12,implementing:12 | implementing:16 | implementing:8 | implementing:29 | implementing:11,1.0,1.0,1.0
+Q044,ar,Dense E5 + FAISS,implementing:12,implementing:11 | pdpl:6 | implementing:12 | implementing:3 | implementing:16,1.0,0.3333333333333333,3.0
+Q045,ar,BM25,implementing:17,implementing:32 | pdpl:7 | transfer:2 | implementing:4 | transfer:3,0.0,0.0,
+Q045,ar,Dense E5 + FAISS,implementing:17,pdpl:8 | pdpl:41 | implementing:12 | implementing:17 | pdpl:18,1.0,0.25,4.0
+Q046,ar,BM25,implementing:19,pdpl:11 | implementing:19 | implementing:30 | implementing:7 | implementing:21,1.0,0.5,2.0
+Q046,ar,Dense E5 + FAISS,implementing:19,implementing:19 | implementing:7 | pdpl:11 | pdpl:18 | implementing:8,1.0,1.0,1.0
+Q047,ar,BM25,implementing:24,implementing:24 | implementing:37 | implementing:19 | pdpl:36 | implementing:29,1.0,1.0,1.0
+Q047,ar,Dense E5 + FAISS,implementing:24,implementing:24 | pdpl:20 | implementing:37 | implementing:4 | implementing:7,1.0,1.0,1.0
+Q048,ar,BM25,implementing:33,implementing:33 | implementing:30 | implementing:21 | implementing:32 | implementing:18,1.0,1.0,1.0
+Q048,ar,Dense E5 + FAISS,implementing:33,pdpl:31 | implementing:33 | implementing:11 | implementing:17 | implementing:12,1.0,0.5,2.0
+Q049,en,BM25,implementing:8,implementing:33 | transfer:4 | implementing:3 | implementing:8 | pdpl:18,1.0,0.25,4.0
+Q049,en,Dense E5 + FAISS,implementing:8,pdpl:18 | implementing:8 | pdpl:11 | implementing:12 | pdpl:10,1.0,0.5,2.0
+Q050,en,BM25,implementing:10,implementing:10 | pdpl:12 | implementing:13 | implementing:3 | pdpl:25,1.0,1.0,1.0
+Q050,en,Dense E5 + FAISS,implementing:10,implementing:3 | implementing:5 | implementing:13 | implementing:10 | implementing:6,1.0,0.25,4.0
+Q051,en,BM25,implementing:29,implementing:29 | implementing:1 | pdpl:25 | implementing:28 | pdpl:26,1.0,1.0,1.0
+Q051,en,Dense E5 + FAISS,implementing:29,implementing:29 | pdpl:25 | implementing:28 | implementing:12 | transfer:4,1.0,1.0,1.0
+Q052,en,BM25,implementing:32,implementing:32 | transfer:1 | implementing:1 | transfer:3 | implementing:4,1.0,1.0,1.0
+Q052,en,Dense E5 + FAISS,implementing:32,implementing:32 | implementing:1 | implementing:33 | pdpl:30 | transfer:1,1.0,1.0,1.0
+Q053,en,BM25,implementing:37,pdpl:16 | implementing:2 | implementing:37 | pdpl:29 | pdpl:1,1.0,0.3333333333333333,3.0
+Q053,en,Dense E5 + FAISS,implementing:37,implementing:37 | pdpl:34 | implementing:3 | pdpl:17 | implementing:24,1.0,1.0,1.0
+Q054,en,BM25,transfer:2,implementing:18 | transfer:4 | transfer:7 | transfer:3 | implementing:21,0.0,0.0,
+Q054,en,Dense E5 + FAISS,transfer:2,transfer:1 | pdpl:29 | transfer:4 | transfer:2 | implementing:18,1.0,0.25,4.0
+Q055,en,BM25,transfer:5,transfer:5 | transfer:7 | transfer:4 | transfer:1 | pdpl:29,1.0,1.0,1.0
+Q055,en,Dense E5 + FAISS,transfer:5,transfer:5 | transfer:1 | pdpl:29 | pdpl:2 | transfer:4,1.0,1.0,1.0
+Q056,en,BM25,transfer:6,transfer:6 | transfer:4 | transfer:7 | implementing:16 | pdpl:2,1.0,1.0,1.0
+Q056,en,Dense E5 + FAISS,transfer:6,transfer:4 | transfer:6 | pdpl:29 | transfer:1 | transfer:7,1.0,0.5,2.0
+Q057,en,BM25,transfer:7,transfer:7 | pdpl:29 | transfer:4 | implementing:33 | transfer:1,1.0,1.0,1.0
+Q057,en,Dense E5 + FAISS,transfer:7,transfer:7 | transfer:4 | transfer:3 | pdpl:29 | transfer:1,1.0,1.0,1.0
+Q058,en,BM25,pdpl:12,pdpl:12 | implementing:4 | transfer:4 | pdpl:10 | implementing:23,1.0,1.0,1.0
+Q058,en,Dense E5 + FAISS,pdpl:12,pdpl:12 | pdpl:13 | implementing:4 | pdpl:41 | pdpl:15,1.0,1.0,1.0
+Q059,en,BM25,pdpl:20,implementing:6 | pdpl:10 | implementing:27 | pdpl:23 | implementing:1,0.0,0.0,
+Q059,en,Dense E5 + FAISS,pdpl:20,pdpl:20 | pdpl:8 | pdpl:16 | pdpl:25 | pdpl:15,1.0,1.0,1.0
+Q060,en,BM25,pdpl:25,pdpl:25 | implementing:28 | pdpl:27 | transfer:3 | implementing:17,1.0,1.0,1.0
+Q060,en,Dense E5 + FAISS,pdpl:25,pdpl:25 | implementing:28 | implementing:29 | pdpl:15 | pdpl:7,1.0,1.0,1.0
