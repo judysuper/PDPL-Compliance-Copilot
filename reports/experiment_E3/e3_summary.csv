@@ -1,0 +1,9 @@
+﻿model,question_language,corpus_language,mode,questions,recall_at_5,mrr_at_5
+English MiniLM baseline,ar,ar,same-language,34,0.0,0.0
+English MiniLM baseline,ar,en,cross-language,34,0.0,0.0
+English MiniLM baseline,en,ar,cross-language,16,0.0,0.0
+English MiniLM baseline,en,en,same-language,16,0.875,0.7395833333333334
+Multilingual E5,ar,ar,same-language,34,0.9117647058823529,0.657843137254902
+Multilingual E5,ar,en,cross-language,34,0.8529411764705882,0.6475490196078431
+Multilingual E5,en,ar,cross-language,16,0.8125,0.609375
+Multilingual E5,en,en,same-language,16,0.9375,0.734375
