@@ -1,0 +1,9 @@
+{
+    "threshold": 0.1,
+    "validation_macro_f1": 0.5356792403616177,
+    "test_macro_f1": 0.4785251621946622,
+    "test_micro_f1": 0.6114035087719298,
+    "test_sample_f1": 0.6375828380132541,
+    "test_hamming_loss": 0.10593017694882831,
+    "test_subset_accuracy": 0.22525107604017217
+}
