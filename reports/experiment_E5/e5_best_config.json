@@ -1,0 +1,10 @@
+{
+  "best_setting": "instruction_and_threshold",
+  "min_rerank_score": 0.007795105688273907,
+  "prompt_style": "system_v2",
+  "notes": {
+    "abstention_accuracy_best": 0.8,
+    "false_refusal_rate_best": 0.0,
+    "citations_valid_first_attempt_best": 0.962
+  }
+}

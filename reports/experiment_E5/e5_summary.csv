@@ -1,0 +1,5 @@
+﻿setting,abstention_accuracy,false_refusal_rate,citations_valid_first_attempt
+no_instruction_no_threshold,0.0,0.0,0.933
+instruction_only,0.6,0.0,0.963
+threshold_only,0.6,0.0,0.926
+instruction_and_threshold,0.8,0.0,0.962
