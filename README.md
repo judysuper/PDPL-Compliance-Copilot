@@ -40,6 +40,20 @@ The legal knowledge base consists of six structured CSV files containing Arabic 
 
 **Purpose:** These structured documents support legal information retrieval and the development of evidence-grounded responses.
 
+### Team-built Gold Q&A Set
+
+**Contents:** At least 60 questions, including at least 20 Arabic questions and 10 unanswerable questions, each with gold article number(s) and a reference answer.
+
+**Purpose:** Evaluates retrieval relevance, answer correctness, legal citation accuracy, and the system's ability to abstain when the available legal corpus cannot answer a question.
+
+### Team-Annotated Local Privacy Policies
+
+**Contents:** At least 10 publicly available privacy policies from apps or websites operating in Saudi Arabia, annotated by the team against the PDPL compliance checklist.
+
+**Purpose:** Supports the assessment of privacy policy practices against Saudi PDPL requirements and helps identify potential compliance gaps.
+
+
+
 ## 4. Methodology
 
 The project follows two complementary workflows:
