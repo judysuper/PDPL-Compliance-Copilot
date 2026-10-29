@@ -1,42 +1,76 @@
 # PDPL Compliance Copilot
 
-An AI-powered project designed to support privacy policy analysis and compliance assessment under Saudi Arabia's Personal Data Protection Law (PDPL).
+An AI-driven compliance support system that leverages **Natural Language Processing (NLP)**, **Machine Learning (ML)**, and **Retrieval-Augmented Generation (RAG)** to facilitate privacy policy analysis against Saudi Arabia's Personal Data Protection Law (PDPL).
 
-## Project Overview
+## 1. Project Overview
 
-PDPL Compliance Copilot is the final project of the AI Engineering Bootcamp. It combines Machine Learning (ML), Natural Language Processing (NLP), and Retrieval-Augmented Generation (RAG) to support privacy policy classification, legal information retrieval, and PDPL compliance analysis.
+PDPL Compliance Copilot is the final project of the **AI Engineering Bootcamp**. It aims to support privacy compliance assessment by integrating legal information retrieval, multi-label privacy policy classification, and compliance gap analysis.
 
-## Key Components
+The system combines structured legal documents with machine learning and information retrieval techniques to identify relevant legal provisions and support privacy policy analysis.
 
-- **Machine Learning:** Classifies privacy policy clauses into predefined categories.
-- **Legal RAG:** Retrieves relevant legal articles to support evidence-based answers to PDPL-related questions.
-- **Compliance Gap Analysis:** Supports the identification of potential gaps between privacy policies and applicable PDPL requirements.
+## 2. System Architecture
 
-## Datasets and Legal Sources
+The project consists of three main components:
 
-### 1. SDAIA – Policies and Regulations
-- **Source:** [National Data Governance Platform](https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MLIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Ck0JpgvACvBYEZyap1-QGxphkGWiCAAUDrxA/dz/d5/L0lHSkovd0RNQUZrQUVnQSEhLzROVkUvYXI!/)
-- **Purpose:** Official legal references for Saudi PDPL and its relevant regulations.
+- **Privacy Policy Classification:** Applies supervised machine learning and multi-label text classification to categorize privacy policy clauses according to predefined privacy practices.
+- **Legal Information Retrieval (RAG):** Uses lexical and dense retrieval techniques to retrieve relevant legal provisions and support responses to PDPL-related queries.
+- **Compliance Gap Analysis:** Aims to identify potential discrepancies between privacy policy statements and applicable legal requirements.
 
-### 2. OPP-115 Dataset
-- **Source:** [OPP-115 on Hugging Face](https://huggingface.co/datasets/alzoubi36/opp_115)
-- **Purpose:** Supports privacy policy clause classification and multi-label machine learning experiments.
+## 3. Datasets and Data Sources
 
-### 3. PDPL Legal Documents
-- **Languages:** Arabic and English.
-- **Format:** Six structured CSV files containing legal articles from the PDPL, Implementing Regulations, and Regulation on Personal Data Transfer Outside the Kingdom.
-- **Purpose:** Used as the legal knowledge base for the RAG system.
+### SDAIA — Official Legal Sources
+**Source:** [National Data Governance Platform](https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/!ut/p/z1/04_Sj9CPykss0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MLIz1w9EUhIZZAhUEGvl6OXoaGwQY60cRo98AB3A0IKw_Ck0JpgvACvBYEZyap1-QGxphkGWiCAAUDrxA/dz/d5/L0lHSkovd0RNQUZrQUVnQSEhLzROVkUvYXI!/)
 
-## Technologies Used
+**Purpose:** Provides official legal references for Saudi Arabia's Personal Data Protection Law and its associated regulations.
 
-- Python
-- Machine Learning and NLP
-- BM25, Dense Retrieval, and Hybrid Retrieval
-- FAISS
-- pandas
-- Git and GitHub
+### OPP-115 Dataset
+**Source:** [OPP-115 on Hugging Face](https://huggingface.co/datasets/alzoubi36/opp_115)
 
-## Project Structure
+**Purpose:** Supports the development of multi-label machine learning models for privacy policy clause classification.
+
+### PDPL Legal Documents
+
+The legal knowledge base consists of six structured CSV files containing Arabic and English article-level text from:
+
+- Personal Data Protection Law (PDPL)
+- Implementing Regulations
+- Regulation on Personal Data Transfer Outside the Kingdom
+
+**Preprocessing:** The documents were converted from PDF to text, cleaned, and segmented into article-level records.
+
+**Purpose:** These structured documents support legal information retrieval and the development of evidence-grounded responses.
+
+## 4. Methodology
+
+The project follows two complementary workflows:
+
+**Machine Learning Workflow**
+1. Dataset inspection and quality assessment.
+2. Text preprocessing and multi-label target preparation.
+3. Baseline model development.
+4. Transformer-based model training and evaluation.
+5. Model performance comparison.
+
+**Legal Retrieval Workflow**
+1. Legal document extraction and text cleaning.
+2. Article-level segmentation and structured storage.
+3. Lexical retrieval using BM25.
+4. Dense retrieval using semantic text representations.
+5. Hybrid retrieval to combine lexical and semantic results.
+6. Retrieval evaluation and evidence verification.
+
+## 5. Technology Stack
+
+- **Programming Language:** Python
+- **Machine Learning:** Scikit-learn, Transformer-based models
+- **Natural Language Processing:** Text preprocessing and multilingual language models
+- **Information Retrieval:** BM25, Dense Retrieval, Hybrid Retrieval
+- **Vector Search:** FAISS
+- **Data Processing:** pandas
+- **Development Environment:** Jupyter Notebook
+- **Version Control:** Git and GitHub
+
+## 6. Project Structure
 
 ```text
 PDPL-Compliance-Copilot/
@@ -51,14 +85,28 @@ PDPL-Compliance-Copilot/
 └── README.md
 ```
 
-## Evaluation Results
+## 7. Evaluation and Results
 
-Model performance and RAG evaluation results will be added after completing the final evaluation.
+Classification and retrieval performance will be documented following the final evaluation.
 
-## Project Status
+Evaluation will focus on:
+- Multi-label classification performance.
+- Comparison between baseline and transformer-based models.
+- Retrieval relevance and ranking quality.
+- Legal citation accuracy and supporting evidence.
 
-Under development.
+Quantitative results will be added once the final experiments and validation are complete.
 
-## Acknowledgments
+## 8. Installation and Usage
 
-Developed as the final project of the AI Engineering Bootcamp.
+Installation and execution instructions will be provided after the project dependencies and application workflow are finalized.
+
+## 9. Project Status
+
+**Status:** Under development.
+
+The project is undergoing model evaluation, retrieval validation, and documentation.
+
+## 10. Acknowledgments
+
+Developed as the final project of the **AI Engineering Bootcamp**.
