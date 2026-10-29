@@ -1,0 +1,19 @@
+{
+  "n_graded_by_both": 60,
+  "n_missing": 0,
+  "correctness_exact_agreement": 0.85,
+  "correctness_kappa_quadratic": 0.87,
+  "correctness_kappa": 0.62,
+  "correctness_gwet_ac1": 0.813,
+  "a_lower_than_b": 2,
+  "a_higher_than_b": 7,
+  "mean_correctness_A": 1.633,
+  "mean_correctness_B": 1.55,
+  "mean_correctness_avg_of_2": 1.592,
+  "support_exact_agreement": 0.967,
+  "support_kappa": 0.841,
+  "mean_correctness_by_language": {
+    "ar": 1.762,
+    "en": 1.194
+  }
+}
