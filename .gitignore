@@ -27,3 +27,16 @@ results/test_runs/
 chroma_db/
 *.sqlite3
 
+
+# Hugging Face cache
+hf_cache/
+**/hf_cache/
+
+# Local models
+models/
+
+# Local experiment archives
+experiments/
+
+# Local transfer/archive files
+*.zip
