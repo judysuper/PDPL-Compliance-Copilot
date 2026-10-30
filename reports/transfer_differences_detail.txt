@@ -1,0 +1,63 @@
+===========================================================================
+ARABIC - DETAILED TEXT DIFFERENCES
+===========================================================================
+TXT headings detected: 9
+CSV rows: 9
+TXT article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CSV article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Numbers in TXT but not CSV: []
+Numbers in CSV but not TXT: []
+Duplicate TXT headings: []
+Duplicate CSV article numbers: []
+Invalid CSV article numbers: []
+Empty article_text rows: []
+
+Article 1: EXACT_MATCH
+Article 2: EXACT_MATCH
+Article 3: EXACT_MATCH
+Article 4: EXACT_MATCH
+Article 5: EXACT_MATCH
+Article 6: EXACT_MATCH
+Article 7: EXACT_MATCH
+Article 8: EXACT_MATCH
+Article 9: EXACT_MATCH
+
+Exact matches: 9
+Articles needing review: 0
+LANGUAGE RESULT: PASS
+
+===========================================================================
+ENGLISH - DETAILED TEXT DIFFERENCES
+===========================================================================
+TXT headings detected: 9
+CSV rows: 9
+TXT article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CSV article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Numbers in TXT but not CSV: []
+Numbers in CSV but not TXT: []
+Duplicate TXT headings: []
+Duplicate CSV article numbers: []
+Invalid CSV article numbers: []
+Empty article_text rows: []
+
+Article 1: EXACT_MATCH
+Article 2: EXACT_MATCH
+Article 3: EXACT_MATCH
+Article 4: EXACT_MATCH
+Article 5: EXACT_MATCH
+Article 6: EXACT_MATCH
+Article 7: EXACT_MATCH
+Article 8: EXACT_MATCH
+Article 9: EXACT_MATCH
+
+Exact matches: 9
+Articles needing review: 0
+LANGUAGE RESULT: PASS
+
+===========================================================================
+FINAL RESULT
+===========================================================================
+Overall: PASS
+Comparison uses normalized text for inspection only.
+A REVIEW result does not automatically mean legal text is missing.
+No original TXT or CSV files were modified.
