@@ -1,0 +1,10 @@
+{
+  "evaluation": "nested leave-one-policy-out cross-validation",
+  "labels": "human-reviewed final Gold",
+  "n_policies": 10,
+  "n_decisions": 150,
+  "v2_accuracy": 0.6466666666666666,
+  "v2_macro_f1": 0.6244733357409413,
+  "v3_accuracy": 0.7,
+  "v3_macro_f1": 0.6875167067628976
+}

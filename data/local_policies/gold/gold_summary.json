@@ -1,0 +1,12 @@
+{
+  "n_policies": 10,
+  "n_requirements": 15,
+  "n_decisions": 150,
+  "label_distribution": {
+    "Covered": 63,
+    "Partial": 47,
+    "Missing": 40
+  },
+  "validation_confirmation": "User confirmed teammate completed human review",
+  "note": "Original reviewer metadata was preserved; some source rows still contain preliminary wording or blank reviewer names."
+}

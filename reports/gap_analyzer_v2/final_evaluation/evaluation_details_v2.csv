@@ -1,0 +1,151 @@
+﻿policy_id,organization,requirement_id,original_annotation_label,gold_status_3class,predicted_status,correct,review_status
+P01,stc,REQ-001,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-002,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-003,unclear,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-004,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-008,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-009,unclear,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-010,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-011,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-012,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-013,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-014,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P01,stc,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-001,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-002,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-004,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-009,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-010,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-011,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-012,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-013,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-014,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P02,Al Rajhi Bank,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-001,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-002,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-007,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-008,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-009,not_mentioned,Missing,Partial,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-010,not_mentioned,Missing,Covered,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-011,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-012,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-013,unclear,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-014,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P03,Jarir,REQ-015,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-001,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-002,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-003,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-009,not_mentioned,Missing,Covered,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-010,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-011,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-012,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-013,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-014,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P04,HungerStation,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-001,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-002,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-003,unclear,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-006,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-007,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-009,not_mentioned,Missing,Partial,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-010,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-011,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-012,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-013,unclear,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-014,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P05,Tawakkalna,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-001,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-002,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-003,unclear,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-004,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-005,not_mentioned,Missing,Partial,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-006,not_mentioned,Missing,Partial,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-007,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-008,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-009,not_mentioned,Missing,Covered,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-010,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-011,unclear,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-012,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-013,unclear,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-014,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P06,Absher,REQ-015,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-001,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-002,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-008,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-009,not_mentioned,Missing,Covered,0,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-010,unclear,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-011,unclear,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-012,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-013,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-014,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P07,Mobily,REQ-015,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-001,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-002,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-009,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-010,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-011,partially_covered,Partial,Missing,0,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-012,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-013,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-014,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P08,Bank Albilad,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-001,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-002,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-004,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-005,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-006,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-007,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-009,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-010,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-011,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-012,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-013,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-014,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P09,Tamara,REQ-015,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-001,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-002,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-003,partially_covered,Partial,Partial,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-004,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-005,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-006,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-007,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-008,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-009,not_mentioned,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-010,partially_covered,Partial,Covered,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-011,explicitly_covered,Covered,Missing,0,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-012,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-013,explicitly_covered,Covered,Covered,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-014,not_verified_in_notice,Missing,Missing,1,NEEDS_HUMAN_VALIDATION
+P10,Nahdi,REQ-015,explicitly_covered,Covered,Partial,0,NEEDS_HUMAN_VALIDATION

@@ -1,11 +1,11 @@
-
-# Python virtual environment
+# Python virtual environments
 .venv/
 venv/
 .venv-1/
 
 # Python cache files
 __pycache__/
+**/__pycache__/
 *.pyc
 
 # Secrets and API keys
@@ -15,28 +15,33 @@ __pycache__/
 
 # Jupyter temporary files
 .ipynb_checkpoints/
+
+# Generated indexes / temporary test outputs
 data/indexes/
 results/test_runs/
 
 # Local model files
+models/
 *.pt
 *.pth
 *.safetensors
-
-# Local databases
-chroma_db/
-*.sqlite3
-
+*.bin
 
 # Hugging Face cache
 hf_cache/
 **/hf_cache/
+.cache/
 
-# Local models
-models/
+# Local databases
+chroma_db/
+*.sqlite3
 
 # Local experiment archives
 experiments/
 
 # Local transfer/archive files
 *.zip
+
+# Operating system temporary files
+.DS_Store
+Thumbs.db

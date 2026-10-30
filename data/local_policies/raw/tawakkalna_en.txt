@@ -1,0 +1,99 @@
+TAWAKKALNA PRIVACY POLICY
+
+ITEM ONE: INTRODUCTION
+
+Believing in the importance of data and confidentiality, and keen by the Saudi Data & AI Authority to provide the best services while maintaining the confidentiality and privacy of the Users’ data. The Application administration is committed to maintaining confidentiality and privacy of user information and materials entered by them as a basis for the privacy policy. The Application Administration will not disclose that information except under specific controls stipulated in this policy and under the legal provisions issued in this regard.
+
+ITEM TWO: USER INFORMATION
+
+User Data and Information indicates all User’s Data contained in the Application, including:
+
+Personal data used for registration.
+
+The user’s geographical location data and movements.
+
+Contact information and usage-related updates.
+
+Other information entered by the user, such as exit permit requests, notifications, and questionnaire answers.
+
+ITEM THREE: COLLECTING AND STORING INFORMATION
+
+Collection of Information:
+
+The information is collected in the Application by linking with the relevant government entities, and it includes the following:
+
+Contact info: The app collects device data that helps improve the experience, such as: Device language and system type.
+
+Input Info: The information entered by the User is saved, such as: Permit requests, reports, and responses to any questionnaires displayed via the Application.
+
+Device Properties: To provide services, the Application needs access to some user and device information, such as:
+
+Location (GPS): To reach the current location in the location-based services: Ambulance request – SOS – issuance of Umrah permit – review of Umrah permit.
+
+Camera: Imagine the violations when submitting a report on an urban scene.
+
+Biometrics (Fingerprint and face): To log in to the app using the device’s biometric features.
+
+Files: Access to the files is requested by the User through the following services:
+
+Data Improvement Initiative: Through which the User's data is corrected and the files that prove the validity of the data to be updated by the User are uploaded.
+
+Data on health status and its correlations are saved such as: Permits for Hajj and Umrah, after coordination and approval by the competent authorities to apply the requirements of the service owners.
+
+Storage of Data:
+
+The User’s data is stored in the servers specified by the Application within the Kingdom of Saudi Arabia. The Application ensures that these servers are protected from hacking and unauthorized access according to the standards followed.
+
+Data Processing and Destruction:
+
+The Application maintains the data with the servers of the National Information Center (NIC). This saved data is subject to the procedures and policies of NIC for each procedure under its policies in governance, processing, and destruction.
+
+ITEM FOUR: USE AND DISCLOSURE
+
+Data Sharing:
+
+The User’s anonymous data may be used within cumulative statistical data and indicators and shared with all relevant entities as the Application deems appropriate.
+
+The Application services and uses are subject to the standards in force in the service owners in the Kingdom of Saudi Arabia, which aim to facilitate the access of citizens, residents, and visitors to services, review data, send notifications and alerts to the User through the Application. The User agrees to protect his personal information and not to disclose it to any party except under the instructions of the data owners and what is imposed by the local regulations in the Kingdom of Saudi Arabia.
+
+The right of access to the user information of the authorized personnel is limited to the administration of the Application and for the purposes and uses specified by its approved policies.
+
+ITEM FIVE: EXTERNAL LINKS
+
+The Application may provide links to third parties, the administration of the Application is not responsible for how third parties collect or use personally identifiable information about the User, and the User assumes full responsibility for their data.
+
+ITEM SIX: USER RESPONSIBILITY & RIGHTS FOR PRIVACY PROTECTION:
+
+USER RIGHTS:
+
+Since the Application is based on linking and reversing data with the relevant government entities, the User’s rights are based on the following:
+
+The User has the right to correct the login data by using the My Profile feature in the Application.
+
+The User has the right to approve or reject before sharing his data with other parties through the Application.
+
+The User has the right to access his personal data and obtain a copy of it through the Application.
+
+USER’S RESPONSIBILITY
+
+The User is obliged to immediately contact the technical support of the Application when they consider that someone else has been able to obtain access information to his account in the Application or any other confidential information.
+
+The User is obliged not to give any confidential information over the phone or the Internet unless the identity of the person or party receiving the information is known.
+
+The User is obligated not to share the login information (username and password) with others and not allow others to use the user's account in the Application.
+
+The Application must be used through a secure electronic device with unused internet-connected Applications closed and ensure that antivirus software is continually updated.
+
+ITEM SEVEN: GENERAL PROVISIONS
+
+For complaints or inquiries, please contact Tawakkalna Customer Services through: ( contact@tawakkalna.gov.sa )
+
+The Administration of “Tawakkalna” reserves the right to add or change any of the provisions of the privacy policy, and the users shall be notified. The Application administration has the right to terminate the user’s account if the user does not accept any changes in the privacy policy.
+
+Arabic is the official language used in the Application of the terms and conditions, and in the event of a dispute in the interpretation of any text contained in any other language, the written text shall be submitted in Arabic.
+
+ITEM EIGHT: APPLICATION ADMINISTRATION
+
+Name of the entity supervising the Application: The Saudi Data & AI Authority (SDAIA)
+
+E-mail ( contact@tawakkalna.gov.sa )
