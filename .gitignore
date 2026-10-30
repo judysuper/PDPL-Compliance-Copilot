@@ -23,3 +23,34 @@ __pycache__/
 # Local databases
 chroma_db/
 *.sqlite3
+# Virtual environments
+.venv/
+venv/
+
+# Trained model weights - keep local only
+models/
+*.safetensors
+*.bin
+
+# Large archives
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Hugging Face cache
+hf_cache/
+.cache/
+
+# Temporary files
+.DS_Store
+Thumbs.db# Local model weights / caches
+**/hf_cache/
+# Python environments / caches
+**/__pycache__/
+# Large temporary archives
+# Notebook/system temp
+
+# Local archived experiments
+experiments/
