@@ -1,0 +1,16 @@
+﻿question_id,language,method,question,expected,retrieved_top5
+Q001,ar,BM25,ما المقصود بالبيانات الشخصية في نظام حماية البيانات الشخصية السعودي؟,pdpl:1,implementing:32 | pdpl:2 | pdpl:15 | implementing:24 | pdpl:10
+Q006,ar,BM25,هل تحتاج كل معالجة للبيانات الشخصية إلى موافقة صاحب البيانات دون أي استثناء؟,pdpl:6,implementing:11 | implementing:1 | transfer:5 | implementing:4 | implementing:13
+Q008,ar,BM25,هل تُعفي الاستعانة بشركة معالجة خارجية جهة التحكم من مسؤولياتها؟,pdpl:8,pdpl:30 | transfer:4 | implementing:17 | pdpl:37 | implementing:15
+Q009,en,BM25,Can an individual always access their personal data without any restrictions?,pdpl:9,pdpl:1 | implementing:2 | implementing:5 | implementing:6 | implementing:1
+Q009,en,Dense E5 + FAISS,Can an individual always access their personal data without any restrictions?,pdpl:9,implementing:5 | pdpl:10 | pdpl:15 | implementing:6 | pdpl:41
+Q011,ar,Dense E5 + FAISS,شركة تجمع من عملائها بيانات أكثر من اللازم ثم تحتفظ بها بعد انتفاء الحاجة إليها. ما المتطلبات المتعلقة بذلك؟,pdpl:11,pdpl:41 | pdpl:19 | implementing:3 | transfer:1 | pdpl:4
+Q016,ar,BM25,صححت شركة بيانات عميل سبق أن أفصحت عنها لجهة أخرى. ما الإجراء المطلوب؟,implementing:7,pdpl:27 | pdpl:11 | transfer:7 | pdpl:29 | implementing:8
+Q022,ar,BM25,تطبيق توصيل يطلب من العميل تفاصيل لا ترتبط بتوصيل الطلب. كيف يحدد البيانات المسموح بجمعها؟,implementing:19,implementing:3 | pdpl:34 | pdpl:31 | implementing:7 | pdpl:30
+Q031,ar,BM25,هل يكفي أن تكون لدى جهة التحكم جهة معالجة خارجية لكي تتوقف عن اتخاذ التدابير الأمنية لحماية البيانات؟,pdpl:19,implementing:23 | implementing:12 | implementing:17 | implementing:4 | implementing:32
+Q031,ar,Dense E5 + FAISS,هل يكفي أن تكون لدى جهة التحكم جهة معالجة خارجية لكي تتوقف عن اتخاذ التدابير الأمنية لحماية البيانات؟,pdpl:19,pdpl:33 | implementing:17 | implementing:23 | pdpl:10 | implementing:12
+Q042,ar,BM25,تطبيق توصيل يطلب من المستخدم رقم هويته وصورة جواز سفره لإتمام طلب عادي، دون توضيح الحاجة لهذه البيانات. ما المبدأ القانوني الذي يجب على الشركة مراعاته؟,pdpl:11,implementing:7 | implementing:4 | pdpl:30 | implementing:5 | pdpl:27
+Q042,ar,Dense E5 + FAISS,تطبيق توصيل يطلب من المستخدم رقم هويته وصورة جواز سفره لإتمام طلب عادي، دون توضيح الحاجة لهذه البيانات. ما المبدأ القانوني الذي يجب على الشركة مراعاته؟,pdpl:11,implementing:3 | implementing:1 | pdpl:4 | implementing:28 | implementing:11
+Q045,ar,BM25,شركة تعاقدت مع مزود خدمة لمعالجة بيانات عملائها. هل ينتهي واجبها في متابعة امتثال المزود بمجرد توقيع العقد؟,implementing:17,implementing:32 | pdpl:7 | transfer:2 | implementing:4 | transfer:3
+Q054,en,BM25,A company wants to use a single overseas hub for necessary centralized processing. Is that purpose listed in the transfer regulation?,transfer:2,implementing:18 | transfer:4 | transfer:7 | transfer:3 | implementing:21
+Q059,en,BM25,A platform discovers unauthorized access that may harm users. Does the Law require notice only to the regulator?,pdpl:20,implementing:6 | pdpl:10 | implementing:27 | pdpl:23 | implementing:1
