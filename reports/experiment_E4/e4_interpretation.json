@@ -1,0 +1,20 @@
+{
+  "baseline_macro_f1": 0.7232391204882809,
+  "xlm_roberta_macro_f1": 0.7679117257556649,
+  "difference": 0.044672605267384036,
+  "categories_improved_with_xlm": [
+    "Data Retention",
+    "Data Security",
+    "First Party Collection/Use",
+    "International and Specific Audiences",
+    "Other",
+    "Policy Change",
+    "Third Party Sharing/Collection"
+  ],
+  "categories_not_improved_with_xlm": [
+    "User Access, Edit and Deletion",
+    "User Choice/Control"
+  ],
+  "interpretation": "XLM-RoBERTa achieved a higher Macro-F1 (0.7679) than TF-IDF + Logistic Regression (0.7232), an improvement of 0.0447.",
+  "split_note": "All train/validation/test partitions were created at policy level. No policy appears in more than one split."
+}

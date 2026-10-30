@@ -1,0 +1,12 @@
+{
+  "Data Retention": 0,
+  "Data Security": 1,
+  "Do Not Track": 2,
+  "First Party Collection/Use": 3,
+  "International and Specific Audiences": 4,
+  "Other": 5,
+  "Policy Change": 6,
+  "Third Party Sharing/Collection": 7,
+  "User Access, Edit and Deletion": 8,
+  "User Choice/Control": 9
+}

@@ -1,0 +1,201 @@
+﻿question_id,question_language,corpus_language,mode,model,gold_article,retrieved_top5,recall_at_5,mrr_at_5,first_correct_rank
+Q001,ar,ar,same-language,Multilingual E5,pdpl:1,pdpl:30 | implementing:4 | transfer:1 | pdpl:29 | pdpl:1,1,0.2,5.0
+Q002,ar,ar,same-language,Multilingual E5,pdpl:2,pdpl:33 | pdpl:2 | transfer:1 | transfer:7 | implementing:17,1,0.5,2.0
+Q003,ar,ar,same-language,Multilingual E5,pdpl:2,implementing:2 | pdpl:2 | pdpl:6 | pdpl:10 | implementing:18,1,0.5,2.0
+Q004,ar,ar,same-language,Multilingual E5,pdpl:4,pdpl:4 | implementing:5 | implementing:6 | implementing:3 | implementing:8,1,1.0,1.0
+Q005,ar,ar,same-language,Multilingual E5,pdpl:5,implementing:12 | implementing:11 | pdpl:5 | pdpl:6 | implementing:3,1,0.3333333333333333,3.0
+Q006,ar,ar,same-language,Multilingual E5,pdpl:6,implementing:11 | pdpl:6 | implementing:12 | pdpl:27 | pdpl:5,1,0.5,2.0
+Q007,en,ar,cross-language,Multilingual E5,pdpl:7,pdpl:7 | implementing:3 | implementing:1 | pdpl:5 | pdpl:9,1,1.0,1.0
+Q008,ar,ar,same-language,Multilingual E5,pdpl:8,implementing:17 | pdpl:33 | pdpl:8 | implementing:32 | pdpl:6,1,0.3333333333333333,3.0
+Q009,en,ar,cross-language,Multilingual E5,pdpl:9,implementing:5 | implementing:2 | pdpl:15 | implementing:4 | pdpl:1,0,0.0,
+Q010,ar,ar,same-language,Multilingual E5,pdpl:10,pdpl:26 | pdpl:10 | implementing:2 | pdpl:27 | implementing:28,1,0.5,2.0
+Q011,ar,ar,same-language,Multilingual E5,pdpl:11,pdpl:41 | pdpl:19 | implementing:3 | transfer:1 | pdpl:4,0,0.0,
+Q012,ar,ar,same-language,Multilingual E5,implementing:3,implementing:3 | implementing:4 | implementing:37 | implementing:7 | implementing:6,1,1.0,1.0
+Q013,ar,ar,same-language,Multilingual E5,implementing:2,implementing:2 | pdpl:2 | implementing:1 | pdpl:10 | pdpl:33,1,1.0,1.0
+Q014,ar,ar,same-language,Multilingual E5,implementing:4,implementing:1 | implementing:4 | implementing:24 | pdpl:4 | pdpl:13,1,0.5,2.0
+Q015,ar,ar,same-language,Multilingual E5,implementing:6,implementing:6 | implementing:3 | implementing:1 | pdpl:4 | transfer:1,1,1.0,1.0
+Q016,ar,ar,same-language,Multilingual E5,implementing:7,implementing:7 | implementing:22 | implementing:3 | implementing:6 | pdpl:6,1,1.0,1.0
+Q017,ar,ar,same-language,Multilingual E5,pdpl:12,pdpl:12 | implementing:20 | implementing:32 | implementing:1 | implementing:33,1,1.0,1.0
+Q018,ar,ar,same-language,Multilingual E5,pdpl:11,pdpl:11 | pdpl:18 | implementing:20 | pdpl:10 | implementing:19,1,1.0,1.0
+Q019,ar,ar,same-language,Multilingual E5,transfer:7,transfer:7 | pdpl:29 | transfer:1 | transfer:3 | implementing:24,1,1.0,1.0
+Q020,en,ar,cross-language,Multilingual E5,transfer:2,transfer:2 | transfer:7 | pdpl:29 | transfer:5 | transfer:1,1,1.0,1.0
+Q021,en,ar,cross-language,Multilingual E5,transfer:6,transfer:4 | pdpl:29 | transfer:7 | implementing:34 | implementing:17,0,0.0,
+Q022,ar,ar,same-language,Multilingual E5,implementing:19,implementing:28 | implementing:1 | implementing:19 | implementing:3 | implementing:18,1,0.3333333333333333,3.0
+Q023,ar,ar,same-language,Multilingual E5,pdpl:12,pdpl:12 | implementing:3 | implementing:20 | implementing:5 | implementing:8,1,1.0,1.0
+Q024,ar,ar,same-language,Multilingual E5,pdpl:13,pdpl:13 | pdpl:11 | implementing:4 | pdpl:29 | implementing:15,1,1.0,1.0
+Q025,ar,ar,same-language,Multilingual E5,pdpl:18,pdpl:15 | pdpl:26 | pdpl:10 | pdpl:18 | pdpl:11,1,0.25,4.0
+Q026,ar,ar,same-language,Multilingual E5,implementing:12,implementing:12 | implementing:11 | implementing:25 | pdpl:22 | pdpl:6,1,1.0,1.0
+Q027,ar,ar,same-language,Multilingual E5,implementing:8,implementing:8 | implementing:7 | implementing:1 | transfer:6 | pdpl:4,1,1.0,1.0
+Q028,ar,ar,same-language,Multilingual E5,implementing:24,implementing:24 | pdpl:20 | implementing:37 | implementing:4 | implementing:32,1,1.0,1.0
+Q029,ar,ar,same-language,Multilingual E5,implementing:25,pdpl:22 | implementing:16 | implementing:25 | pdpl:17 | implementing:3,1,0.3333333333333333,3.0
+Q030,ar,ar,same-language,Multilingual E5,transfer:7,transfer:7 | transfer:3 | pdpl:29 | transfer:1 | transfer:4,1,1.0,1.0
+Q031,ar,ar,same-language,Multilingual E5,pdpl:19,pdpl:33 | implementing:17 | implementing:23 | pdpl:10 | implementing:12,0,0.0,
+Q042,ar,ar,same-language,Multilingual E5,pdpl:11,implementing:3 | implementing:1 | pdpl:4 | implementing:28 | implementing:11,0,0.0,
+Q043,ar,ar,same-language,Multilingual E5,implementing:7,implementing:7 | implementing:22 | implementing:37 | implementing:36 | implementing:6,1,1.0,1.0
+Q044,ar,ar,same-language,Multilingual E5,implementing:12,implementing:11 | pdpl:6 | implementing:12 | implementing:3 | implementing:16,1,0.3333333333333333,3.0
+Q045,ar,ar,same-language,Multilingual E5,implementing:17,pdpl:8 | pdpl:41 | implementing:12 | implementing:17 | pdpl:18,1,0.25,4.0
+Q046,ar,ar,same-language,Multilingual E5,implementing:19,implementing:19 | implementing:7 | pdpl:11 | pdpl:18 | implementing:8,1,1.0,1.0
+Q047,ar,ar,same-language,Multilingual E5,implementing:24,implementing:24 | pdpl:20 | implementing:37 | implementing:4 | implementing:7,1,1.0,1.0
+Q048,ar,ar,same-language,Multilingual E5,implementing:33,pdpl:31 | implementing:33 | implementing:11 | implementing:17 | implementing:12,1,0.5,2.0
+Q049,en,ar,cross-language,Multilingual E5,implementing:8,pdpl:18 | pdpl:41 | implementing:8 | pdpl:15 | implementing:3,1,0.3333333333333333,3.0
+Q050,en,ar,cross-language,Multilingual E5,implementing:10,implementing:3 | pdpl:21 | implementing:10 | pdpl:25 | pdpl:4,1,0.3333333333333333,3.0
+Q051,en,ar,cross-language,Multilingual E5,implementing:29,implementing:29 | implementing:28 | pdpl:25 | pdpl:21 | implementing:37,1,1.0,1.0
+Q052,en,ar,cross-language,Multilingual E5,implementing:32,pdpl:33 | implementing:33 | implementing:32 | implementing:1 | implementing:17,1,0.3333333333333333,3.0
+Q053,en,ar,cross-language,Multilingual E5,implementing:37,pdpl:34 | implementing:37 | implementing:3 | implementing:17 | implementing:24,1,0.5,2.0
+Q054,en,ar,cross-language,Multilingual E5,transfer:2,transfer:2 | implementing:34 | transfer:1 | transfer:7 | transfer:4,1,1.0,1.0
+Q055,en,ar,cross-language,Multilingual E5,transfer:5,transfer:5 | transfer:7 | implementing:33 | transfer:1 | pdpl:3,1,1.0,1.0
+Q056,en,ar,cross-language,Multilingual E5,transfer:6,transfer:4 | pdpl:29 | transfer:7 | transfer:6 | transfer:1,1,0.25,4.0
+Q057,en,ar,cross-language,Multilingual E5,transfer:7,transfer:7 | pdpl:29 | transfer:3 | transfer:4 | transfer:1,1,1.0,1.0
+Q058,en,ar,cross-language,Multilingual E5,pdpl:12,pdpl:12 | implementing:4 | implementing:1 | pdpl:13 | implementing:24,1,1.0,1.0
+Q059,en,ar,cross-language,Multilingual E5,pdpl:20,pdpl:21 | transfer:9 | implementing:24 | pdpl:7 | implementing:1,0,0.0,
+Q060,en,ar,cross-language,Multilingual E5,pdpl:25,pdpl:25 | implementing:28 | pdpl:7 | implementing:29 | pdpl:21,1,1.0,1.0
+Q001,ar,en,cross-language,Multilingual E5,pdpl:1,pdpl:16 | implementing:26 | pdpl:15 | pdpl:1 | implementing:4,1,0.25,4.0
+Q002,ar,en,cross-language,Multilingual E5,pdpl:2,pdpl:2 | pdpl:30 | implementing:26 | transfer:3 | implementing:4,1,1.0,1.0
+Q003,ar,en,cross-language,Multilingual E5,pdpl:2,pdpl:2 | implementing:2 | pdpl:6 | pdpl:10 | pdpl:14,1,1.0,1.0
+Q004,ar,en,cross-language,Multilingual E5,pdpl:4,pdpl:4 | implementing:5 | implementing:6 | implementing:7 | implementing:26,1,1.0,1.0
+Q005,ar,en,cross-language,Multilingual E5,pdpl:5,implementing:12 | pdpl:5 | implementing:7 | pdpl:15 | pdpl:10,1,0.5,2.0
+Q006,ar,en,cross-language,Multilingual E5,pdpl:6,pdpl:6 | pdpl:5 | implementing:26 | pdpl:10 | implementing:11,1,1.0,1.0
+Q007,en,en,same-language,Multilingual E5,pdpl:7,implementing:12 | pdpl:10 | pdpl:6 | pdpl:7 | implementing:11,1,0.25,4.0
+Q008,ar,en,cross-language,Multilingual E5,pdpl:8,pdpl:30 | transfer:4 | pdpl:33 | implementing:27 | pdpl:8,1,0.2,5.0
+Q009,en,en,same-language,Multilingual E5,pdpl:9,implementing:5 | pdpl:10 | pdpl:15 | implementing:6 | pdpl:41,0,0.0,
+Q010,ar,en,cross-language,Multilingual E5,pdpl:10,pdpl:26 | pdpl:6 | pdpl:10 | pdpl:15 | pdpl:11,1,0.3333333333333333,3.0
+Q011,ar,en,cross-language,Multilingual E5,pdpl:11,implementing:26 | implementing:27 | pdpl:31 | pdpl:30 | implementing:20,0,0.0,
+Q012,ar,en,cross-language,Multilingual E5,implementing:3,implementing:3 | implementing:4 | pdpl:35 | pdpl:4 | implementing:6,1,1.0,1.0
+Q013,ar,en,cross-language,Multilingual E5,implementing:2,implementing:2 | pdpl:2 | pdpl:26 | pdpl:41 | pdpl:16,1,1.0,1.0
+Q014,ar,en,cross-language,Multilingual E5,implementing:4,implementing:27 | pdpl:15 | pdpl:13 | pdpl:1 | pdpl:24,0,0.0,
+Q015,ar,en,cross-language,Multilingual E5,implementing:6,implementing:6 | pdpl:4 | implementing:20 | implementing:1 | implementing:4,1,1.0,1.0
+Q016,ar,en,cross-language,Multilingual E5,implementing:7,implementing:26 | implementing:27 | implementing:20 | pdpl:24 | implementing:7,1,0.2,5.0
+Q017,ar,en,cross-language,Multilingual E5,pdpl:12,pdpl:12 | implementing:23 | pdpl:41 | implementing:20 | pdpl:1,1,1.0,1.0
+Q018,ar,en,cross-language,Multilingual E5,pdpl:11,implementing:18 | pdpl:11 | pdpl:18 | implementing:12 | implementing:19,1,0.5,2.0
+Q019,ar,en,cross-language,Multilingual E5,transfer:7,transfer:7 | transfer:3 | transfer:4 | implementing:24 | pdpl:35,1,1.0,1.0
+Q020,en,en,same-language,Multilingual E5,transfer:2,transfer:2 | transfer:7 | transfer:1 | pdpl:29 | transfer:5,1,1.0,1.0
+Q021,en,en,same-language,Multilingual E5,transfer:6,transfer:6 | transfer:4 | transfer:1 | pdpl:29 | pdpl:8,1,1.0,1.0
+Q022,ar,en,cross-language,Multilingual E5,implementing:19,pdpl:15 | implementing:4 | pdpl:11 | implementing:18 | implementing:14,0,0.0,
+Q023,ar,en,cross-language,Multilingual E5,pdpl:12,pdpl:15 | implementing:4 | implementing:20 | pdpl:12 | implementing:8,1,0.25,4.0
+Q024,ar,en,cross-language,Multilingual E5,pdpl:13,pdpl:13 | pdpl:11 | implementing:27 | implementing:4 | implementing:26,1,1.0,1.0
+Q025,ar,en,cross-language,Multilingual E5,pdpl:18,pdpl:18 | pdpl:15 | pdpl:11 | pdpl:10 | implementing:27,1,1.0,1.0
+Q026,ar,en,cross-language,Multilingual E5,implementing:12,implementing:12 | pdpl:18 | pdpl:22 | implementing:14 | implementing:25,1,1.0,1.0
+Q027,ar,en,cross-language,Multilingual E5,implementing:8,pdpl:4 | pdpl:35 | pdpl:1 | pdpl:18 | implementing:8,1,0.2,5.0
+Q028,ar,en,cross-language,Multilingual E5,implementing:24,implementing:24 | pdpl:35 | pdpl:20 | implementing:37 | implementing:4,1,1.0,1.0
+Q029,ar,en,cross-language,Multilingual E5,implementing:25,implementing:16 | pdpl:22 | pdpl:17 | implementing:25 | pdpl:15,1,0.25,4.0
+Q030,ar,en,cross-language,Multilingual E5,transfer:7,transfer:7 | transfer:3 | pdpl:29 | transfer:4 | transfer:1,1,1.0,1.0
+Q031,ar,en,cross-language,Multilingual E5,pdpl:19,pdpl:30 | pdpl:15 | implementing:4 | implementing:26 | pdpl:33,0,0.0,
+Q042,ar,en,cross-language,Multilingual E5,pdpl:11,pdpl:11 | pdpl:4 | pdpl:1 | pdpl:15 | pdpl:13,1,1.0,1.0
+Q043,ar,en,cross-language,Multilingual E5,implementing:7,implementing:7 | implementing:22 | pdpl:4 | pdpl:30 | implementing:26,1,1.0,1.0
+Q044,ar,en,cross-language,Multilingual E5,implementing:12,pdpl:6 | implementing:14 | implementing:12 | pdpl:5 | implementing:4,1,0.3333333333333333,3.0
+Q045,ar,en,cross-language,Multilingual E5,implementing:17,pdpl:30 | implementing:26 | pdpl:41 | implementing:27 | implementing:3,0,0.0,
+Q046,ar,en,cross-language,Multilingual E5,implementing:19,implementing:19 | implementing:20 | implementing:26 | implementing:7 | implementing:18,1,1.0,1.0
+Q047,ar,en,cross-language,Multilingual E5,implementing:24,implementing:24 | pdpl:35 | pdpl:20 | pdpl:16 | implementing:4,1,1.0,1.0
+Q048,ar,en,cross-language,Multilingual E5,implementing:33,implementing:33 | pdpl:18 | pdpl:41 | implementing:12 | implementing:26,1,1.0,1.0
+Q049,en,en,same-language,Multilingual E5,implementing:8,pdpl:18 | implementing:8 | pdpl:11 | implementing:12 | pdpl:10,1,0.5,2.0
+Q050,en,en,same-language,Multilingual E5,implementing:10,implementing:3 | implementing:5 | implementing:13 | implementing:10 | implementing:6,1,0.25,4.0
+Q051,en,en,same-language,Multilingual E5,implementing:29,implementing:29 | pdpl:25 | implementing:28 | implementing:12 | transfer:4,1,1.0,1.0
+Q052,en,en,same-language,Multilingual E5,implementing:32,implementing:32 | implementing:1 | implementing:33 | pdpl:30 | transfer:1,1,1.0,1.0
+Q053,en,en,same-language,Multilingual E5,implementing:37,implementing:37 | pdpl:34 | implementing:3 | pdpl:17 | implementing:24,1,1.0,1.0
+Q054,en,en,same-language,Multilingual E5,transfer:2,transfer:1 | pdpl:29 | transfer:4 | transfer:2 | implementing:18,1,0.25,4.0
+Q055,en,en,same-language,Multilingual E5,transfer:5,transfer:5 | transfer:1 | pdpl:29 | pdpl:2 | transfer:4,1,1.0,1.0
+Q056,en,en,same-language,Multilingual E5,transfer:6,transfer:4 | transfer:6 | pdpl:29 | transfer:1 | transfer:7,1,0.5,2.0
+Q057,en,en,same-language,Multilingual E5,transfer:7,transfer:7 | transfer:4 | transfer:3 | pdpl:29 | transfer:1,1,1.0,1.0
+Q058,en,en,same-language,Multilingual E5,pdpl:12,pdpl:12 | pdpl:13 | implementing:4 | pdpl:41 | pdpl:15,1,1.0,1.0
+Q059,en,en,same-language,Multilingual E5,pdpl:20,pdpl:20 | pdpl:8 | pdpl:16 | pdpl:25 | pdpl:15,1,1.0,1.0
+Q060,en,en,same-language,Multilingual E5,pdpl:25,pdpl:25 | implementing:28 | implementing:29 | pdpl:15 | pdpl:7,1,1.0,1.0
+Q001,ar,ar,same-language,English MiniLM baseline,pdpl:1,pdpl:43 | implementing:38 | transfer:8 | transfer:9 | pdpl:41,0,0.0,
+Q002,ar,ar,same-language,English MiniLM baseline,pdpl:2,pdpl:21 | pdpl:7 | pdpl:22 | transfer:8 | transfer:9,0,0.0,
+Q003,ar,ar,same-language,English MiniLM baseline,pdpl:2,implementing:38 | transfer:9 | transfer:8 | pdpl:43 | pdpl:21,0,0.0,
+Q004,ar,ar,same-language,English MiniLM baseline,pdpl:4,pdpl:43 | implementing:38 | transfer:9 | pdpl:3 | transfer:8,0,0.0,
+Q005,ar,ar,same-language,English MiniLM baseline,pdpl:5,implementing:38 | pdpl:43 | transfer:9 | pdpl:21 | pdpl:19,0,0.0,
+Q006,ar,ar,same-language,English MiniLM baseline,pdpl:6,transfer:9 | transfer:8 | implementing:38 | pdpl:41 | implementing:34,0,0.0,
+Q007,en,ar,cross-language,English MiniLM baseline,pdpl:7,pdpl:43 | pdpl:41 | implementing:38 | transfer:8 | transfer:9,0,0.0,
+Q008,ar,ar,same-language,English MiniLM baseline,pdpl:8,transfer:9 | transfer:8 | pdpl:21 | pdpl:22 | implementing:38,0,0.0,
+Q009,en,ar,cross-language,English MiniLM baseline,pdpl:9,implementing:17 | pdpl:14 | pdpl:41 | implementing:38 | pdpl:26,0,0.0,
+Q010,ar,ar,same-language,English MiniLM baseline,pdpl:10,transfer:9 | implementing:34 | transfer:8 | implementing:38 | pdpl:7,0,0.0,
+Q011,ar,ar,same-language,English MiniLM baseline,pdpl:11,transfer:9 | implementing:34 | implementing:38 | pdpl:7 | transfer:8,0,0.0,
+Q012,ar,ar,same-language,English MiniLM baseline,implementing:3,transfer:9 | transfer:8 | implementing:34 | implementing:38 | pdpl:7,0,0.0,
+Q013,ar,ar,same-language,English MiniLM baseline,implementing:2,transfer:8 | transfer:9 | implementing:38 | implementing:34 | pdpl:43,0,0.0,
+Q014,ar,ar,same-language,English MiniLM baseline,implementing:4,pdpl:43 | transfer:8 | transfer:9 | pdpl:21 | implementing:38,0,0.0,
+Q015,ar,ar,same-language,English MiniLM baseline,implementing:6,transfer:8 | transfer:9 | pdpl:43 | pdpl:21 | pdpl:41,0,0.0,
+Q016,ar,ar,same-language,English MiniLM baseline,implementing:7,pdpl:43 | transfer:8 | transfer:9 | pdpl:21 | pdpl:41,0,0.0,
+Q017,ar,ar,same-language,English MiniLM baseline,pdpl:12,implementing:38 | transfer:9 | transfer:8 | pdpl:43 | pdpl:3,0,0.0,
+Q018,ar,ar,same-language,English MiniLM baseline,pdpl:11,pdpl:41 | pdpl:21 | implementing:38 | transfer:9 | pdpl:43,0,0.0,
+Q019,ar,ar,same-language,English MiniLM baseline,transfer:7,transfer:8 | transfer:9 | pdpl:21 | pdpl:7 | pdpl:22,0,0.0,
+Q020,en,ar,cross-language,English MiniLM baseline,transfer:2,transfer:9 | implementing:38 | pdpl:41 | implementing:34 | pdpl:7,0,0.0,
+Q021,en,ar,cross-language,English MiniLM baseline,transfer:6,implementing:34 | pdpl:31 | pdpl:28 | pdpl:12 | implementing:25,0,0.0,
+Q022,ar,ar,same-language,English MiniLM baseline,implementing:19,transfer:9 | transfer:8 | implementing:34 | implementing:38 | pdpl:7,0,0.0,
+Q023,ar,ar,same-language,English MiniLM baseline,pdpl:12,transfer:9 | transfer:8 | implementing:34 | pdpl:7 | implementing:38,0,0.0,
+Q024,ar,ar,same-language,English MiniLM baseline,pdpl:13,pdpl:14 | pdpl:21 | pdpl:22 | pdpl:19 | pdpl:26,0,0.0,
+Q025,ar,ar,same-language,English MiniLM baseline,pdpl:18,pdpl:21 | implementing:34 | pdpl:19 | implementing:38 | transfer:9,0,0.0,
+Q026,ar,ar,same-language,English MiniLM baseline,implementing:12,transfer:8 | pdpl:19 | pdpl:22 | pdpl:41 | pdpl:21,0,0.0,
+Q027,ar,ar,same-language,English MiniLM baseline,implementing:8,pdpl:41 | pdpl:21 | pdpl:19 | pdpl:22 | pdpl:43,0,0.0,
+Q028,ar,ar,same-language,English MiniLM baseline,implementing:24,implementing:34 | implementing:38 | transfer:9 | transfer:8 | pdpl:28,0,0.0,
+Q029,ar,ar,same-language,English MiniLM baseline,implementing:25,transfer:9 | implementing:34 | implementing:38 | transfer:8 | pdpl:7,0,0.0,
+Q030,ar,ar,same-language,English MiniLM baseline,transfer:7,transfer:9 | implementing:38 | implementing:34 | pdpl:22 | transfer:8,0,0.0,
+Q031,ar,ar,same-language,English MiniLM baseline,pdpl:19,pdpl:22 | pdpl:21 | implementing:34 | transfer:9 | implementing:38,0,0.0,
+Q042,ar,ar,same-language,English MiniLM baseline,pdpl:11,implementing:34 | implementing:38 | transfer:9 | pdpl:22 | pdpl:19,0,0.0,
+Q043,ar,ar,same-language,English MiniLM baseline,implementing:7,transfer:9 | transfer:8 | implementing:38 | pdpl:43 | implementing:34,0,0.0,
+Q044,ar,ar,same-language,English MiniLM baseline,implementing:12,transfer:9 | transfer:8 | implementing:38 | pdpl:43 | implementing:34,0,0.0,
+Q045,ar,ar,same-language,English MiniLM baseline,implementing:17,transfer:9 | transfer:8 | pdpl:7 | pdpl:22 | implementing:34,0,0.0,
+Q046,ar,ar,same-language,English MiniLM baseline,implementing:19,transfer:9 | implementing:38 | transfer:8 | pdpl:41 | implementing:34,0,0.0,
+Q047,ar,ar,same-language,English MiniLM baseline,implementing:24,pdpl:21 | pdpl:14 | pdpl:22 | pdpl:43 | pdpl:7,0,0.0,
+Q048,ar,ar,same-language,English MiniLM baseline,implementing:33,transfer:9 | implementing:38 | transfer:8 | implementing:34 | pdpl:43,0,0.0,
+Q049,en,ar,cross-language,English MiniLM baseline,implementing:8,implementing:17 | pdpl:41 | pdpl:1 | pdpl:12 | pdpl:11,0,0.0,
+Q050,en,ar,cross-language,English MiniLM baseline,implementing:10,pdpl:43 | transfer:9 | pdpl:41 | pdpl:32 | implementing:38,0,0.0,
+Q051,en,ar,cross-language,English MiniLM baseline,implementing:29,implementing:34 | pdpl:12 | pdpl:17 | implementing:17 | pdpl:31,0,0.0,
+Q052,en,ar,cross-language,English MiniLM baseline,implementing:32,implementing:17 | pdpl:43 | implementing:25 | implementing:22 | implementing:11,0,0.0,
+Q053,en,ar,cross-language,English MiniLM baseline,implementing:37,pdpl:43 | pdpl:41 | transfer:8 | implementing:17 | pdpl:26,0,0.0,
+Q054,en,ar,cross-language,English MiniLM baseline,transfer:2,transfer:9 | implementing:34 | implementing:38 | pdpl:28 | pdpl:20,0,0.0,
+Q055,en,ar,cross-language,English MiniLM baseline,transfer:5,transfer:9 | implementing:38 | implementing:34 | pdpl:7 | pdpl:19,0,0.0,
+Q056,en,ar,cross-language,English MiniLM baseline,transfer:6,implementing:34 | pdpl:28 | pdpl:31 | implementing:25 | pdpl:9,0,0.0,
+Q057,en,ar,cross-language,English MiniLM baseline,transfer:7,implementing:34 | transfer:9 | pdpl:12 | implementing:25 | pdpl:20,0,0.0,
+Q058,en,ar,cross-language,English MiniLM baseline,pdpl:12,pdpl:43 | transfer:9 | implementing:38 | pdpl:41 | transfer:8,0,0.0,
+Q059,en,ar,cross-language,English MiniLM baseline,pdpl:20,implementing:17 | pdpl:14 | pdpl:26 | pdpl:3 | implementing:38,0,0.0,
+Q060,en,ar,cross-language,English MiniLM baseline,pdpl:25,implementing:17 | pdpl:41 | implementing:38 | transfer:8 | implementing:34,0,0.0,
+Q001,ar,en,cross-language,English MiniLM baseline,pdpl:1,pdpl:42 | pdpl:37 | pdpl:30 | pdpl:36 | pdpl:16,0,0.0,
+Q002,ar,en,cross-language,English MiniLM baseline,pdpl:2,pdpl:42 | pdpl:30 | pdpl:37 | pdpl:36 | implementing:26,0,0.0,
+Q003,ar,en,cross-language,English MiniLM baseline,pdpl:2,pdpl:42 | implementing:10 | pdpl:30 | pdpl:19 | implementing:23,0,0.0,
+Q004,ar,en,cross-language,English MiniLM baseline,pdpl:4,pdpl:42 | pdpl:37 | pdpl:30 | pdpl:16 | transfer:3,0,0.0,
+Q005,ar,en,cross-language,English MiniLM baseline,pdpl:5,pdpl:30 | pdpl:37 | pdpl:42 | pdpl:41 | transfer:5,0,0.0,
+Q006,ar,en,cross-language,English MiniLM baseline,pdpl:6,pdpl:42 | pdpl:30 | implementing:10 | implementing:27 | implementing:26,0,0.0,
+Q007,en,en,same-language,English MiniLM baseline,pdpl:7,pdpl:6 | pdpl:5 | implementing:11 | implementing:12 | pdpl:9,0,0.0,
+Q008,ar,en,cross-language,English MiniLM baseline,pdpl:8,pdpl:42 | pdpl:30 | implementing:26 | implementing:27 | implementing:23,0,0.0,
+Q009,en,en,same-language,English MiniLM baseline,pdpl:9,implementing:5 | implementing:6 | pdpl:27 | pdpl:5 | pdpl:13,0,0.0,
+Q010,ar,en,cross-language,English MiniLM baseline,pdpl:10,pdpl:30 | pdpl:42 | implementing:10 | implementing:27 | implementing:23,0,0.0,
+Q011,ar,en,cross-language,English MiniLM baseline,pdpl:11,pdpl:30 | pdpl:42 | transfer:5 | pdpl:29 | implementing:27,0,0.0,
+Q012,ar,en,cross-language,English MiniLM baseline,implementing:3,pdpl:30 | pdpl:42 | implementing:27 | pdpl:34 | transfer:5,0,0.0,
+Q013,ar,en,cross-language,English MiniLM baseline,implementing:2,pdpl:42 | pdpl:30 | implementing:10 | pdpl:36 | implementing:23,0,0.0,
+Q014,ar,en,cross-language,English MiniLM baseline,implementing:4,pdpl:42 | pdpl:37 | pdpl:30 | pdpl:41 | implementing:23,0,0.0,
+Q015,ar,en,cross-language,English MiniLM baseline,implementing:6,pdpl:42 | pdpl:30 | implementing:23 | implementing:26 | pdpl:19,0,0.0,
+Q016,ar,en,cross-language,English MiniLM baseline,implementing:7,pdpl:42 | pdpl:30 | implementing:26 | pdpl:37 | implementing:27,0,0.0,
+Q017,ar,en,cross-language,English MiniLM baseline,pdpl:12,pdpl:42 | pdpl:37 | pdpl:30 | implementing:23 | pdpl:36,0,0.0,
+Q018,ar,en,cross-language,English MiniLM baseline,pdpl:11,pdpl:42 | pdpl:34 | transfer:5 | pdpl:30 | pdpl:41,0,0.0,
+Q019,ar,en,cross-language,English MiniLM baseline,transfer:7,pdpl:30 | pdpl:42 | pdpl:37 | pdpl:33 | transfer:8,0,0.0,
+Q020,en,en,same-language,English MiniLM baseline,transfer:2,transfer:2 | transfer:5 | pdpl:29 | implementing:27 | transfer:1,1,1.0,1.0
+Q021,en,en,same-language,English MiniLM baseline,transfer:6,transfer:6 | transfer:4 | transfer:1 | pdpl:29 | pdpl:19,1,1.0,1.0
+Q022,ar,en,cross-language,English MiniLM baseline,implementing:19,pdpl:42 | pdpl:30 | transfer:5 | implementing:10 | transfer:8,0,0.0,
+Q023,ar,en,cross-language,English MiniLM baseline,pdpl:12,pdpl:42 | pdpl:30 | implementing:23 | implementing:27 | pdpl:21,0,0.0,
+Q024,ar,en,cross-language,English MiniLM baseline,pdpl:13,pdpl:42 | pdpl:16 | pdpl:37 | pdpl:36 | implementing:26,0,0.0,
+Q025,ar,en,cross-language,English MiniLM baseline,pdpl:18,pdpl:30 | pdpl:42 | pdpl:37 | pdpl:31 | implementing:26,0,0.0,
+Q026,ar,en,cross-language,English MiniLM baseline,implementing:12,pdpl:34 | pdpl:42 | pdpl:41 | pdpl:31 | implementing:23,0,0.0,
+Q027,ar,en,cross-language,English MiniLM baseline,implementing:8,pdpl:41 | pdpl:42 | pdpl:34 | transfer:5 | transfer:3,0,0.0,
+Q028,ar,en,cross-language,English MiniLM baseline,implementing:24,pdpl:42 | pdpl:30 | pdpl:37 | implementing:23 | pdpl:36,0,0.0,
+Q029,ar,en,cross-language,English MiniLM baseline,implementing:25,pdpl:30 | pdpl:42 | implementing:27 | transfer:5 | implementing:23,0,0.0,
+Q030,ar,en,cross-language,English MiniLM baseline,transfer:7,pdpl:42 | pdpl:30 | transfer:5 | implementing:23 | implementing:27,0,0.0,
+Q031,ar,en,cross-language,English MiniLM baseline,pdpl:19,pdpl:42 | pdpl:30 | transfer:5 | pdpl:3 | implementing:23,0,0.0,
+Q042,ar,en,cross-language,English MiniLM baseline,pdpl:11,pdpl:37 | pdpl:42 | pdpl:30 | pdpl:36 | pdpl:34,0,0.0,
+Q043,ar,en,cross-language,English MiniLM baseline,implementing:7,pdpl:30 | pdpl:42 | implementing:10 | pdpl:37 | pdpl:19,0,0.0,
+Q044,ar,en,cross-language,English MiniLM baseline,implementing:12,pdpl:42 | pdpl:30 | pdpl:34 | transfer:5 | implementing:10,0,0.0,
+Q045,ar,en,cross-language,English MiniLM baseline,implementing:17,pdpl:30 | pdpl:42 | implementing:27 | transfer:5 | pdpl:33,0,0.0,
+Q046,ar,en,cross-language,English MiniLM baseline,implementing:19,pdpl:42 | pdpl:30 | implementing:10 | pdpl:19 | implementing:26,0,0.0,
+Q047,ar,en,cross-language,English MiniLM baseline,implementing:24,pdpl:42 | pdpl:30 | implementing:26 | pdpl:37 | implementing:27,0,0.0,
+Q048,ar,en,cross-language,English MiniLM baseline,implementing:33,pdpl:42 | pdpl:30 | pdpl:37 | implementing:23 | pdpl:19,0,0.0,
+Q049,en,en,same-language,English MiniLM baseline,implementing:8,pdpl:18 | implementing:8 | pdpl:4 | pdpl:31 | implementing:7,1,0.5,2.0
+Q050,en,en,same-language,English MiniLM baseline,implementing:10,implementing:5 | implementing:10 | implementing:6 | implementing:30 | pdpl:4,1,0.5,2.0
+Q051,en,en,same-language,English MiniLM baseline,implementing:29,implementing:29 | implementing:12 | implementing:28 | transfer:6 | implementing:1,1,1.0,1.0
+Q052,en,en,same-language,English MiniLM baseline,implementing:32,implementing:32 | transfer:3 | transfer:1 | implementing:33 | pdpl:1,1,1.0,1.0
+Q053,en,en,same-language,English MiniLM baseline,implementing:37,implementing:37 | pdpl:34 | pdpl:12 | implementing:4 | implementing:21,1,1.0,1.0
+Q054,en,en,same-language,English MiniLM baseline,transfer:2,transfer:1 | transfer:5 | transfer:2 | pdpl:29 | transfer:4,1,0.3333333333333333,3.0
+Q055,en,en,same-language,English MiniLM baseline,transfer:5,transfer:5 | transfer:1 | implementing:27 | transfer:6 | pdpl:29,1,1.0,1.0
+Q056,en,en,same-language,English MiniLM baseline,transfer:6,transfer:6 | transfer:4 | pdpl:29 | transfer:1 | transfer:7,1,1.0,1.0
+Q057,en,en,same-language,English MiniLM baseline,transfer:7,transfer:7 | transfer:5 | transfer:1 | transfer:4 | pdpl:29,1,1.0,1.0
+Q058,en,en,same-language,English MiniLM baseline,pdpl:12,pdpl:12 | implementing:4 | implementing:20 | pdpl:15 | implementing:5,1,1.0,1.0
+Q059,en,en,same-language,English MiniLM baseline,pdpl:20,pdpl:20 | pdpl:39 | pdpl:37 | pdpl:7 | pdpl:8,1,1.0,1.0
+Q060,en,en,same-language,English MiniLM baseline,pdpl:25,implementing:28 | pdpl:25 | implementing:29 | pdpl:7 | pdpl:26,1,0.5,2.0

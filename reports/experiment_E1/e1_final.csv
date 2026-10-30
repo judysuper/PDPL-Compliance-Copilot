@@ -1,0 +1,4 @@
+﻿system,n_questions,abstention_accuracy,false_refusal_rate,citations_valid_first_attempt,cites_gold_article,gold_in_sources,n_errors,manual_correctness_0_2,manual_support_yes
+llm_only,30,0.6,0.2,,0.05,,0,1.4,
+naive_rag,30,0.6,0.0,0.963,0.96,0.96,0,1.783,0.883
+full,30,0.8,0.0,0.962,1.0,1.0,0,1.8,0.944

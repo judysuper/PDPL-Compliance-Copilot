@@ -1,0 +1,10 @@
+rank_bm25
+faiss-cpu
+sentence-transformers
+pandas
+numpy
+requests
+anthropic
+pytest
+python-dotenv
+openai

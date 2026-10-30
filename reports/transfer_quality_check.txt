@@ -1,0 +1,89 @@
+======================================================================
+TRANSFER REGULATION - QUALITY CHECK
+======================================================================
+Read-only: original TXT and CSV files will not be modified.
+
+----------------------------------------------------------------------
+LANGUAGE: Arabic
+----------------------------------------------------------------------
+TXT detected headings: 9
+CSV rows: 9
+TXT article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CSV article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Numbers missing from CSV: []
+Numbers missing from TXT: []
+Duplicate TXT headings: []
+Duplicate CSV numbers: []
+Invalid CSV numbers: []
+CSV rows with empty article_text: []
+
+ARTICLE TEXT COMPARISON
+Article 1: CSV_TEXT_IS_SUBSTRING_REVIEW
+  TXT preview: المادة الأولى: التعريفات تكون للألفاظ والعبارات الواردة في هذه اللائحة المعاني المبيّنة أمام كل منها في المادة (الأولى) من نظام حماية البيانات الشخصية الصادر بالمرسوم الملكي رقم (م
+  CSV preview: المادة الأولى: التعريفات تكون للألفاظ والعبارات الواردة في هذه اللائحة المعاني المبيّنة أمام كل منها في المادة (الأولى) من نظام حماية البيانات الشخصية الصادر بالمرسوم الملكي رقم (م
+Article 2: EXACT_MATCH
+Article 3: TEXT_DIFFERENCE_REVIEW
+  TXT preview: المادة الثالثة: إجراءات ومعايير تقويم مستوى حماية البيانات الشخصية خارج المملكة 1. تنشر الجهة المختصة في موقعها الرسمي قائمة الدول أو المنظمات الدولية التي توفر مستوى مناسب لحماية 
+  CSV preview: المادة الثالثة: إجراءات ومعايير تقويم مستوى حماية البيانات الشخصية خارج المملكة 1. تنشر الجهة المختصة في موقعها الرسمي قائمة الدول أو المنظمات الدولية التي توفر مستوى مناسب لحماية 
+Article 4: TEXT_DIFFERENCE_REVIEW
+  TXT preview: المادة الرابعة: حالات إعفاء جهات التحكم من شروط الالتزام بمستوى الحماية المناسب والحد الأدنى لنقل البيانات الشخصية 1. وفقاً لحالات الإعفاء المنصوص عليها في الفقرة (2) من هذه المادة
+  CSV preview: المادة الرابعة: حالات إعفاء جهات التحكم من شروط الالتزام بمستوى الحماية المناسب والحد الأدنى لنقل البيانات الشخصية 1. وفقاً لحالات الإعفاء المنصوص عليها في الفقرة (2) من هذه المادة
+Article 5: EXACT_MATCH
+Article 6: EXACT_MATCH
+Article 7: TEXT_DIFFERENCE_REVIEW
+  TXT preview: المادة السابعة: تقويم مخاطر نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة 1. على جهة التحكم إجراء تقويم مخاطر قبل نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة، و
+  CSV preview: المادة السابعة: تقويم مخاطر نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة 1. على جهة التحكم إجراء تقويم مخاطر قبل نقل البيانات الشخصية أو الإفصاح عنها لجهة خارج المملكة، و
+Article 8: EXACT_MATCH
+Article 9: CSV_TEXT_IS_SUBSTRING_REVIEW
+  TXT preview: المادة التاسعة: النفاذ يُعمَل باللائحة من تاريخ نشرها في الجريدة الرسمية. تصنيف الوثيقة: عام 8 [صفحة الغلاف الخلفي: خلفية بلا نص مكتوب سوى الشعار] [شعار: SDAIA الهيئة السعودية للبي
+  CSV preview: المادة التاسعة: النفاذ يُعمَل باللائحة من تاريخ نشرها في الجريدة الرسمية.
+
+Exact text matches: 4
+Articles requiring review: 5
+LANGUAGE RESULT: REVIEW
+
+----------------------------------------------------------------------
+LANGUAGE: English
+----------------------------------------------------------------------
+TXT detected headings: 9
+CSV rows: 9
+TXT article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CSV article numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Numbers missing from CSV: []
+Numbers missing from TXT: []
+Duplicate TXT headings: []
+Duplicate CSV numbers: []
+Invalid CSV numbers: []
+CSV rows with empty article_text: []
+
+ARTICLE TEXT COMPARISON
+Article 1: TEXT_DIFFERENCE_REVIEW
+  TXT preview: Article 1: Definitions The terms and phrases used in this Regulation shall have the meanings assigned to them in Article (1) of the Personal Data Protection Law issued pursuant to 
+  CSV preview: Article 1: Definitions The terms and phrases used in this Regulation shall have the meanings assigned to them in Article (1) of the Personal Data Protection Law issued pursuant to 
+Article 2: EXACT_MATCH
+Article 3: TEXT_DIFFERENCE_REVIEW
+  TXT preview: Article 3: Procedures and Standards for Evaluating the Level of Personal Data Protection Outside the Kingdom 1. The competent authority shall publish on its official website a list
+  CSV preview: Article 3: Procedures and Standards for Evaluating the Level of Personal Data Protection Outside the Kingdom 1. The competent authority shall publish on its official website a list
+Article 4: TEXT_DIFFERENCE_REVIEW
+  TXT preview: Article 4: Cases in Which Controllers Are Exempt from the Requirements to Comply with the Appropriate Level of Protection and the Minimum Transfer of Personal Data 1. In accordance
+  CSV preview: Article 4: Cases in Which Controllers Are Exempt from the Requirements to Comply with the Appropriate Level of Protection and the Minimum Transfer of Personal Data 1. In accordance
+Article 5: EXACT_MATCH
+Article 6: EXACT_MATCH
+Article 7: TEXT_DIFFERENCE_REVIEW
+  TXT preview: Article 7: Risk Assessment of Transferring or Disclosing Personal Data to a Party Outside the Kingdom 1. The controller shall conduct a risk assessment before transferring or discl
+  CSV preview: Article 7: Risk Assessment of Transferring or Disclosing Personal Data to a Party Outside the Kingdom 1. The controller shall conduct a risk assessment before transferring or discl
+Article 8: EXACT_MATCH
+Article 9: CSV_TEXT_IS_SUBSTRING_REVIEW
+  TXT preview: Article 9: Enforcement The Regulation shall enter into force on the date of its publication in the Official Gazette. 11 Public : Classification Document
+  CSV preview: Article 9: Enforcement The Regulation shall enter into force on the date of its publication in the Official Gazette.
+
+Exact text matches: 4
+Articles requiring review: 5
+LANGUAGE RESULT: REVIEW
+
+======================================================================
+FINAL RESULT
+======================================================================
+Overall: REVIEW
+Comparison normalizes formatting only; it does not edit legal text.
+A text difference must be reviewed before any correction.

@@ -1,0 +1,194 @@
+========================================================================
+PDPL COMPLIANCE COPILOT
+CSV QUALITY CHECK REPORT
+========================================================================
+Generated: 2026-10-16 00:53:21
+Mode: READ-ONLY
+Original CSV and TXT files will not be modified.
+
+========================================================================
+FILE: implementing_ar_articles.csv
+========================================================================
+Rows: 38
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {}
+Duplicate full rows: 0
+Unique article numbers: 38
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 137 characters
+Longest article text: 2851 characters
+Average article text: 1029.2 characters
+Very short article candidates (<50 chars): []
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: []
+FILE RESULT: PASS
+
+========================================================================
+FILE: implementing_en_articles.csv
+========================================================================
+Rows: 38
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {}
+Duplicate full rows: 0
+Unique article numbers: 38
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 219 characters
+Longest article text: 3451 characters
+Average article text: 1274.6 characters
+Very short article candidates (<50 chars): []
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: []
+FILE RESULT: PASS
+
+========================================================================
+FILE: pdpl_ar_articles.csv
+========================================================================
+Rows: 43
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {'article_title': 43}
+Duplicate full rows: 0
+Unique article numbers: 43
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 33 characters
+Longest article text: 3106 characters
+Average article text: 587.0 characters
+Very short article candidates (<50 chars): [{'CSV line': 33, 'article_number': '32', 'characters': 33}]
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: ['43 empty article titles; review whether titles exist in the source.', '1 very short article candidates require manual review.']
+FILE RESULT: PASS
+
+========================================================================
+FILE: pdpl_en_articles.csv
+========================================================================
+Rows: 43
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {'article_title': 43}
+Duplicate full rows: 0
+Unique article numbers: 43
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 20 characters
+Longest article text: 3793 characters
+Average article text: 764.8 characters
+Very short article candidates (<50 chars): [{'CSV line': 33, 'article_number': '32', 'characters': 20}]
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: ['43 empty article titles; review whether titles exist in the source.', '1 very short article candidates require manual review.']
+FILE RESULT: PASS
+
+========================================================================
+FILE: transfer_ar_articles.csv
+========================================================================
+Rows: 9
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {}
+Duplicate full rows: 0
+Unique article numbers: 9
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 73 characters
+Longest article text: 2611 characters
+Average article text: 1004.6 characters
+Very short article candidates (<50 chars): []
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: []
+FILE RESULT: PASS
+
+========================================================================
+FILE: transfer_en_articles.csv
+========================================================================
+Rows: 9
+Columns: 7
+Column names: ['document_id', 'language', 'article_number', 'article_title', 'article_text', 'source_file', 'source_line_start']
+Missing required columns: []
+Additional columns: []
+Columns with empty values: {}
+Duplicate full rows: 0
+Unique article numbers: 9
+Duplicate article numbers: []
+Invalid article number values: []
+Missing expected article numbers: []
+Unexpected article numbers: []
+Shortest article text: 116 characters
+Longest article text: 3369 characters
+Average article text: 1278.2 characters
+Very short article candidates (<50 chars): []
+Suspicious text markers: {'NUL characters': [], 'Replacement characters': [], 'HTML entities': []}
+Issues: []
+Warnings: []
+FILE RESULT: PASS
+
+========================================================================
+ARABIC / ENGLISH ARTICLE NUMBER COMPARISON
+========================================================================
+
+Pair: implementing_ar / implementing_en
+Arabic rows: 38
+English rows: 38
+Numbers only in Arabic: []
+Numbers only in English: []
+PAIR RESULT: PASS
+
+Pair: pdpl_ar / pdpl_en
+Arabic rows: 43
+English rows: 43
+Numbers only in Arabic: []
+Numbers only in English: []
+PAIR RESULT: PASS
+
+Pair: transfer_ar / transfer_en
+Arabic rows: 9
+English rows: 9
+Numbers only in Arabic: []
+Numbers only in English: []
+PAIR RESULT: PASS
+
+========================================================================
+FINAL QUALITY SUMMARY
+========================================================================
+implementing_ar: PASS | Issues: 0 | Warnings: 0
+implementing_en: PASS | Issues: 0 | Warnings: 0
+pdpl_ar: PASS | Issues: 0 | Warnings: 2
+pdpl_en: PASS | Issues: 0 | Warnings: 2
+transfer_ar: PASS | Issues: 0 | Warnings: 0
+transfer_en: PASS | Issues: 0 | Warnings: 0
+Total file-level issues: 0
+Total file-level warnings: 4
+
+IMPORTANT:
+- This is a structural and text-quality screening.
+- It does not independently verify legal meaning.
+- Warnings require review and do not automatically mean errors.
+- No source files were modified.
