@@ -185,6 +185,7 @@ Never commit API keys or secrets.
 ## 6. Models
 
 Large model weights are intentionally not stored directly in GitHub 
+
 let's say i would like to see your device live a little bit longer.
 
 | Component | Model | Source | Setup |
