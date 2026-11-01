@@ -429,6 +429,8 @@ Acknowledgements:
 - FAISS
 - Ollama
 - Streamlit
+- and of course Our elite Instructors
+for their *I*nvaluable *H*elp and *M*entorship ⭐️.
 
 ---
 
