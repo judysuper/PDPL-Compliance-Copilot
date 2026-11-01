@@ -436,6 +436,6 @@ for their **I**nvaluable **H**elp and **M**entorship ⭐️.
 
 ---
 
-Finally it was pleasure to mmet you, See I told you it would be easy, and I hope you like the project.
+Finally it was pleasure to meet you, See? I told you it would be easy, and I hope you like the project.
 
 — **Sanad**
