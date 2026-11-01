@@ -1,17 +1,25 @@
-# PDPL Compliance Copilot
+# Sanad - PDPL Compliance Copilot
 
-AI-powered assistant for the Saudi Personal Data Protection Law (PDPL): ask the law in Arabic or English and always see the supporting article, and check a privacy policy for gaps against a PDPL requirements checklist.
+Hello wonderful reader, yes you, I am talking to you.
+
+Aren’t you READing ME right now? Then you made it to the right place.
+
+Allow me to walk you through the steps needed to explore our recent project, rest assured it will be easy.
+
+And if you think me human then you are certainly mistaken. I am just an AI system, my name is **Sanad**, and I was created by an awesome human group. Now let’s see how this project works, and don’t forget the promise, it is going to be easy.
+
+So what am i? Am an AI-powered assistant for the Saudi Personal Data Protection Law (PDPL): ask me about the law in Arabic or English and you will always see the supporting article, and can check a privacy policy for gaps against a PDPL requirements checklist.
 
 > **Not legal advice.** Outputs are first-pass aids. A requirement marked *Covered* does not mean the organisation is compliant.
 
-**Track:** B (LegalTech, NLP and RAG), Olo Academy AIEP capstone
-**Team:** ⟨Member 1 name⟩ · ⟨Member 2 name⟩ · ⟨Member 3 name⟩
+**Track:** B (LegalTech, NLP and RAG), Olo Academy AIEP capstone  
+**Team:** جودي فيصل العروي · ايه ابراهيم قالو · أنفال عبدالله الردادي
 
 ---
 
 ## 1. Problem and users
 
-Most startups in the Kingdom have no in-house legal team. A general chatbot invents article numbers and mixes Saudi law with GDPR. This project answers **only from the official texts**, cites the exact article, says *"not covered"* when the texts do not answer, and reviews a privacy policy against the PDPL.
+Why we strat with the problem because most startups in the Kingdom have no in-house legal team. A general chatbot can invent article numbers and mix Saudi law with GDPR. This project answers **only from the official texts**, cites the exact article, says *"not covered"* when the texts do not answer, and reviews a privacy policy against the PDPL.
 
 | User | Need |
 |---|---|
@@ -20,6 +28,8 @@ Most startups in the Kingdom have no in-house legal team. A general chatbot inve
 | Auditor | The evidence behind every statement |
 
 ## 2. What it does
+
+what can i do ? well this 
 
 1. **Structured legal knowledge base**: PDPL, Implementing Regulation and Transfer Regulation (Arabic + English), parsed into article-level chunks with metadata.
 2. **Grounded bilingual Q&A**: BM25 + dense retrieval, fusion, cross-encoder reranking, LLM answer with article citations, programmatic citation check, and abstention.
@@ -45,65 +55,185 @@ flowchart LR
   E --> Rep[Gap report: Covered / Partial / Missing + evidence]
 ```
 
-⟨Add a screenshot of the app: `docs/images/app_qa.png`, `docs/images/app_gap.png`⟩
+---
 
 ## 4. Quick start
+ohh now we are at the fun part, get ready 
 
-**Requirements:** Python ⟨3.x⟩, ⟨GPU optional⟩, ⟨disk space for models and indexes⟩.
+**SOME Requirements:** Python 3.x, internet connection for first-time model downloads, Ollama, and of course enough disk space for local model files and indexes.
+
+### Step 1 — Clone the repository
 
 ```bash
 git clone https://github.com/judysuper/PDPL-Compliance-Copilot.git
 cd PDPL-Compliance-Copilot
+```
+
+### Step 2 — Create and activate a virtual environment
+
+Windows PowerShell:
+
+```powershell
 python -m venv .venv
-# Windows PowerShell:  .venv\Scripts\Activate.ps1      Linux/macOS: source .venv/bin/activate
+.venv\Scripts\Activate.ps1
+```
+
+Linux/macOS:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Step 3 — Install dependencies
+
+```bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-**Configuration.** Copy `.env.example` to `.env` and fill it. **Never commit keys.**
+### Step 4 — Install and prepare Ollama
 
-| Variable | Purpose | Default |
-|---|---|---|
-| `LLM_PROVIDER` | `gemini`, `ollama` or `mock` (no model needed, for testing the UI) | `ollama` |
-| `GEMINI_API_KEY` | Gemini key (provider `gemini`) | none |
-| `GEMINI_MODEL` | Primary Gemini model | see `src/generation/generation.py` |
-| `OLLAMA_MODEL` | Local model for provider `ollama` | `command-r7b-arabic` |
-| `OLLAMA_URL` | Ollama server | `http://localhost:11434/api/generate` |
+The default generation model is:
 
-For `ollama`: install [Ollama](https://ollama.com), run `ollama pull command-r7b-arabic`, keep it running.
+```text
+command-r7b-arabic
+```
 
-**Data and indexes.** ⟨Exact commands to download the corpus and build the indexes, e.g. `python scripts/build_indexes.py`⟩
+Install Ollama, then run:
 
-**Run the demo:**
+```bash
+ollama pull command-r7b-arabic
+```
+
+You can verify the model with:
+
+```bash
+ollama list
+```
+
+### Step 5 — Download the fine-tuned XLM-RoBERTa classifier
+
+The final privacy-policy classifier is hosted on Hugging Face:
+
+```text
+ItsJudy/pdpl-opp115-xlm-roberta
+```
+
+Download it into the expected local directory:
+
+```bash
+hf download ItsJudy/pdpl-opp115-xlm-roberta --local-dir models/xlm_roberta_best
+```
+
+### Step 6 — Build the dense FAISS index
+
+```bash
+python src/retrieval/dense_retrieval.py
+```
+
+This downloads the dense retrieval model automatically if needed and creates:
+
+```text
+data/indexes/pdpl_faiss.index
+data/indexes/pdpl_metadata.csv
+```
+
+The BM25 index is created dynamically at runtime.
+
+### Step 7 — Run the tests
+
+```bash
+pytest -q
+```
+
+Current integrated test status:
+
+```text
+61 passed
+```
+
+### Step 8 — Run the demo
 
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
-First start loads the models and retrieves the 15 checklist questions (cached afterwards in `cache/checklist_retrieval.json`). Delete that file if the corpus or index changes.
+The app contains:
 
-**Run the tests:**
+- Ask the Law
+- Privacy Policy Gap Analysis
 
-```bash
-python -m pytest tests -q
+---
+
+## 5. Configuration
+
+The project supports multiple LLM providers.
+
+| Variable | Purpose | Default |
+|---|---|---|
+| `LLM_PROVIDER` | `gemini`, `ollama` or `mock` | `ollama` |
+| `GEMINI_API_KEY` | Gemini API key | none |
+| `OLLAMA_MODEL` | Local Ollama model | `command-r7b-arabic` |
+| `OLLAMA_URL` | Ollama server | `http://localhost:11434/api/generate` |
+| `OLLAMA_NUM_CTX` | Ollama context size | `8192` |
+
+Never commit API keys or secrets.
+
+---
+
+## 6. Models
+
+Large model weights are intentionally not stored directly in GitHub let's say i would like to see your lap live a little bit longer.
+
+| Component | Model | Source | Setup |
+|---|---|---|---|
+| Dense Retriever | `intfloat/multilingual-e5-base` | Hugging Face | Auto-download |
+| Reranker | `BAAI/bge-reranker-v2-m3` | Hugging Face | Auto-download |
+| Generation LLM | `command-r7b-arabic` | Ollama | `ollama pull command-r7b-arabic` |
+| Clause Classifier | `ItsJudy/pdpl-opp115-xlm-roberta` | Hugging Face | `hf download ...` or direct loading |
+
+The XLM-RoBERTa classifier can also be loaded directly from Hugging Face:
+
+```python
+from src.gap_analyzer.classifier_v2 import XLMRClassifierAdapter
+
+classifier = XLMRClassifierAdapter(
+    "ItsJudy/pdpl-opp115-xlm-roberta"
+)
 ```
 
-## 5. Data
+---
 
-| Source | What | Use | Licence / access |
-|---|---|---|---|
-| PDPL, Implementing Regulation, Transfer Regulation | Official Arabic text + English translation (SDAIA / Bureau of Experts) | Knowledge base | ⟨public official texts: link⟩ |
-| OPP-115 | 115 website policies, paragraph-level annotations | Clause classifier | ⟨source link + licence⟩ |
-| Gold Q&A set | ⟨N⟩ questions (⟨N⟩ Arabic, ⟨N⟩ unanswerable) with gold articles | Retrieval, answers, abstention | Team-built, `data/...` |
-| Local policies | 10 public policies of apps/sites in Saudi Arabia, annotated against the checklist (150 Gold decisions) | Gap analyser evaluation | Team-annotated; sources and access dates in `data/local_policies/` |
+## 7. Data
 
-Full data card: ⟨`docs/data_card.md`⟩. Splits: OPP-115 is split **by policy**, never by paragraph.
+| Source | What | Use |
+|---|---|---|
+| PDPL, Implementing Regulation, Transfer Regulation | Official Arabic and English legal text | Knowledge base |
+| OPP-115 | 115 privacy policies with paragraph-level annotations | Clause classifier |
+| Gold Q&A set | 60 questions, 42 Arabic, 18 English, 10 unanswerable | Retrieval, answers, abstention |
+| Local policies | 10 Saudi-operating privacy policies, 150 Gold decisions | Gap analyser evaluation |
 
-## 6. Gap analyser
+OPP-115 is split **by policy**, never by paragraph.
 
-- **Checklist:** 15 PDPL requirements, each with article, source document and a verification question (`data/pdpl_checklist/`).
-- **Explicit category mapping:** OPP-115 category to requirement, with its gaps discussed (OPP-115 is mostly US websites; some PDPL requirements have no OPP category). See ⟨`docs/category_mapping.md`⟩.
-- **Statuses:** `Covered`, `Partial`, `Missing` only.
-- **Run on all policies and evaluate:**
+Final split:
+
+```text
+Train policies: 79
+Validation policies: 18
+Test policies: 18
+```
+
+---
+
+## 8. Gap analyser
+
+- **Checklist:** 15 PDPL requirements, each with article, source document and verification question.
+- **Classifier:** fine-tuned XLM-RoBERTa on OPP-115.
+- **Rule layer:** PDPL-specific rules support requirements that are not well represented by OPP-115.
+- **Statuses:** `Covered`, `Partial`, `Missing`.
+
+Run:
 
 ```bash
 python src/gap_analyzer/run_all_policies_v2.py
@@ -111,60 +241,197 @@ python src/gap_analyzer/evaluate_all_policies_v2.py
 python src/gap_analyzer/gap_analyzer_v3_gold_cv.py
 ```
 
-## 7. Results
+---
 
-Reproduce with: ⟨commands or notebooks per experiment⟩. Fill the tables with measured values only.
+## 9. Results
 
-| Experiment | Question | Result |
-|---|---|---|
-| E1 | LLM-only vs naive RAG vs hybrid + rerank | ⟨…⟩ |
-| E2 | Fixed-size vs article-level chunking | ⟨…⟩ |
-| E3 | Arabic vs English retrieval; mono- vs multilingual | ⟨…⟩ |
-| E4 | TF-IDF + LR vs fine-tuned XLM-R (macro-F1, per class) | ⟨…⟩ |
-| E5 | Abstention with vs without instruction + threshold | ⟨…⟩ |
-| Gap analyser | Per-requirement accuracy on 10 annotated policies (V2 rules vs V3) | ⟨…⟩ |
+### E1 — LLM-only vs naive RAG vs hybrid + rerank
 
-Key numbers: Recall@5 and MRR (AR/EN) ⟨…⟩ · citation accuracy ⟨…⟩ · abstention accuracy / false-refusal ⟨…⟩ · classifier macro-F1 ⟨…⟩.
+Final reranked retrieval performance:
 
-## 8. Repository layout
-
-```
-app/          Streamlit demo (Q&A tab + gap analysis tab)
-configs/      paths, thresholds, hyperparameters
-data/         download scripts, checklist, local policies (raw data not committed)
-docs/         data card, category mapping, figures
-notebooks/    exploration and experiments
-reports/      experiment tables and figures
-scripts/      helper scripts
-src/          retrieval, generation, classifier, gap_analyzer, evaluation
-tests/        unit and smoke tests
+```text
+Recall@5: 0.98
+MRR@5:    0.84
 ```
 
-## 9. Model artifacts
+### E2 — Fixed-size vs article-level chunking
 
-- Classifier weights, tokenizer, label map and thresholds: `models/xlm_roberta_best/` (⟨where to download if not in the repo⟩).
-- Indexes: ⟨path and how to rebuild⟩.
-- Random seed: ⟨42⟩. Results in the report can be reproduced from this repository.
+| Strategy | Top-1 | Recall@5 | MRR |
+|---|---:|---:|---:|
+| Fixed-size | 0.42 | 0.72 | 0.5523 |
+| Article-level | 0.40 | **0.78** | **0.5573** |
 
-## 10. Responsible AI and limitations
+Article-level chunking was selected because it preserves legal structure and improves Recall@5.
 
-- **Not legal advice.** The app shows a notice, and "Covered" can still be non-compliant in practice.
-- **Grounding:** answers come only from retrieved official texts; citations are checked against the retrieved context; the system abstains when retrieval is weak. Amended texts must be re-ingested (⟨how outdated texts are detected⟩).
-- **Privacy:** policies pasted into the demo are processed locally except text sent to the selected LLM provider (⟨state what is sent and stored⟩).
-- **Limits:** the classifier is trained on US-centric OPP-115; rule-based decisions can over-credit a requirement when keywords appear without the full statement; ROPA and DPIA depend on internal documents that public policies rarely state; the 10 local policies are a small sample; ⟨add measured error categories⟩.
+### E3 — Monolingual vs multilingual retrieval
 
-## 11. Future work
+| Query → Document | Recall@5 | MRR |
+|---|---:|---:|
+| Arabic → Arabic | 0.9118 | 0.6578 |
+| Arabic → English | 0.8529 | 0.6475 |
+| English → Arabic | 0.8125 | 0.6094 |
+| English → English | 0.9375 | 0.7344 |
 
-⟨e.g. more annotated Saudi policies with two reviewers, paragraph-level co-occurrence rules, NCA Essential Cybersecurity Controls as a second corpus, GDPR comparison questions, PDF export of the gap report⟩.
+### E4 — TF-IDF + Logistic Regression vs XLM-RoBERTa
 
-## 12. Team contributions
+| Metric | TF-IDF + Logistic Regression | XLM-RoBERTa |
+|---|---:|---:|
+| Macro F1 | 0.7232 | **0.7679** |
+| Micro F1 | 0.7508 | **0.7806** |
+| Hamming Loss | 0.0845 | **0.0779** |
+| Subset Accuracy | 0.4310 | **0.4923** |
 
-| Member | Owns |
-|---|---|
-| ⟨Member 1⟩ | Corpus ingestion, article chunking, Arabic normalisation, gold Q&A, checklist |
-| ⟨Member 2⟩ | Retrieval, reranking, generation, citation check, abstention, E1–E3, E5 |
-| ⟨Member 3⟩ | Clause classifier (E4), gap analyser, local policy annotation, application |
+Macro-F1 improvement:
 
-## 13. Acknowledgements and licence
+```text
++4.47 percentage points
+```
 
-SDAIA and the Bureau of Experts (official texts), the Usable Privacy Policy Project (OPP-115), Olo Academy AIEP. ⟨Licence of this repository⟩.
+Detailed reports:
+
+```text
+reports/experiment_E4/
+```
+
+### E5 — Abstention
+
+| Configuration | Abstention Accuracy | False Refusal |
+|---|---:|---:|
+| No instruction / no threshold | 0.00 | 0.00 |
+| Instruction only | 0.60 | 0.00 |
+| Threshold only | 0.60 | 0.00 |
+| Instruction + threshold | **0.80** | **0.00** |
+
+### Gap analyser
+
+| Version | Accuracy | Macro F1 |
+|---|---:|---:|
+| V2 | 0.6467 | 0.6245 |
+| V3 | **0.7000** | **0.6875** |
+
+Gold evaluation:
+
+```text
+10 policies
+15 requirements
+150 decisions
+```
+
+---
+
+## 10. Repository layout
+
+```text
+app/          Streamlit demo
+configs/      configuration files
+data/         legal corpus, evaluation data, checklist and local policies
+docs/         documentation and figures
+notebooks/    experiments and exploration
+reports/      experiment results
+scripts/      helper and evaluation scripts
+src/          retrieval, generation, classifier and gap analyser
+tests/        unit and integration tests
+```
+
+---
+
+## 11. Model artifacts
+
+Large model artifacts are kept outside GitHub.
+
+### Classifier
+
+Fine-tuned model:
+
+```text
+ItsJudy/pdpl-opp115-xlm-roberta
+```
+
+Local expected path:
+
+```text
+models/xlm_roberta_best/
+```
+
+### Dense retrieval
+
+Model:
+
+```text
+intfloat/multilingual-e5-base
+```
+
+Generated index:
+
+```text
+data/indexes/pdpl_faiss.index
+data/indexes/pdpl_metadata.csv
+```
+
+### Reranker
+
+Model:
+
+```text
+BAAI/bge-reranker-v2-m3
+```
+
+### Generation
+
+Model:
+
+```text
+command-r7b-arabic
+```
+
+The repository excludes large files and caches such as:
+
+```text
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+hf_cache/
+```
+
+---
+
+## 12. Responsible AI and limitations
+
+Well because i am a Responsible AI that works with the laws am also not perfect and have a little bit of what human called a down side aka a limitations
+
+here are some things you need to know 
+
+- **Not legal advice.** The app is a support tool, not a substitute for qualified legal review.
+- **Covered does not prove operational compliance.**
+- **Grounding:** answers are generated from retrieved legal evidence.
+- **Citation checking:** cited articles are checked against retrieved context.
+- **Abstention:** weak retrieval can trigger a not-covered response.
+- **OPP-115 limitation:** its categories are not equivalent to Saudi PDPL legal requirements.
+- **Gap Analyzer limitation:** rule-based decisions can over-credit a requirement when keywords appear without the full operational practice.
+- **Local policy sample:** the 10 annotated privacy policies form an initial evaluation set, not a comprehensive regulatory benchmark.
+- **Legal updates:** amended PDPL texts require the legal corpus and retrieval indexes to be updated.
+
+---
+
+## 13. Acknowledgements
+
+This project was developed as the **Track B capstone project** for the **Olo Academy AI Engineering Program (AIEP)** by one of the most great groups ever miss Judy and Ayah and Anfal 
+
+Acknowledgements:
+
+- SDAIA and official Saudi legal sources
+- OPP-115 / Usable Privacy Policy Project
+- Hugging Face
+- Transformers
+- Sentence Transformers
+- FAISS
+- Ollama
+- Streamlit
+
+---
+
+Finally it was pleasure to mmet you, See I told you it would be easy, and I hope you like the project.
+
+— **Sanad**
