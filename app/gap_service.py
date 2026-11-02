@@ -8,6 +8,7 @@ Kept free of Streamlit so it can be unit-tested. It does NOT change the analyzer
   3. gold lookup      - to compare with the human-reviewed Gold when rehearsing on the 10 known policies.
 """
 import csv
+import json
 import re
 import threading
 import time
@@ -44,6 +45,45 @@ def label_name_problems(classifier, opp_category_map):
     return sorted(needed - have)
 
 
+# ----------------------------------------------------------------------------- classifier source and labels
+OPP115_DEFAULT_LABELS = {   # standard OPP-115 / Hugging Face order (ASSUMED when a model only exposes LABEL_0..LABEL_11)
+    0: "Data Retention", 1: "Data Security", 2: "Do Not Track", 3: "First Party Collection/Use",
+    4: "International and Specific Audiences", 5: "Introductory/Generic", 6: "Policy Change", 7: "Other",
+    8: "Privacy contact information", 9: "Third Party Sharing/Collection", 10: "User Access, Edit and Deletion",
+    11: "User Choice/Control"}
+
+
+def import_classifier():
+    """(XLMRClassifierAdapter, DEFAULT_MODEL). Prefers classifier_v2_1.py (can load from Hugging Face),
+    falls back to classifier_v2.py (local folder only; DEFAULT_MODEL is then None)."""
+    try:
+        import classifier_v2_1 as module
+    except ImportError:
+        import classifier_v2 as module
+    return module.XLMRClassifierAdapter, getattr(module, "DEFAULT_MODEL", None)
+
+
+def resolve_classifier_source(local_dir, env_value=None, default_model=None):
+    """Priority: CLASSIFIER_SOURCE env var > local folder (if it exists) > default Hugging Face repo."""
+    if env_value:
+        return env_value
+    if Path(local_dir).exists():
+        return str(local_dir)
+    return default_model
+
+
+def apply_default_labels_if_generic(classifier):
+    """If the model only exposes LABEL_0..LABEL_11, assume the standard OPP-115 order. Returns True if applied.
+    Without this, rules_v2.OPP_CATEGORY_MAP never matches, every score is 0 and Covered silently becomes Partial."""
+    names = list(getattr(classifier, "id2label", {}).values())
+    if len(names) == 12 and all(str(n).startswith("LABEL_") for n in names):
+        classifier.id2label = dict(OPP115_DEFAULT_LABELS)
+        if hasattr(classifier, "thresholds"):
+            classifier.thresholds = {label: 0.5 for label in classifier.id2label.values()}
+        return True
+    return False
+
+
 # ----------------------------------------------------------------------------- article evidence
 def source_prefix(source_document):
     """Checklist source_document -> corpus prefix ('pdpl' / 'implementing' / 'transfer')."""
@@ -77,30 +117,55 @@ def pick_article(docs, source_document, article_number):
     return None
 
 
-def make_cached_retriever(pipe, final_k=5):
-    """Memoised RAGPipeline.retrieve(query)['final']; checklist questions never change, so warm it once."""
+def _json_default(o):
+    try:
+        return float(o)
+    except (TypeError, ValueError):
+        return str(o)
+
+
+def make_cached_retriever(pipe, final_k=5, cache_path=None):
+    """Memoised RAGPipeline.retrieve(query)['final'], optionally persisted to disk.
+
+    The 15 checklist questions never change, so their retrieval is computed ONCE (slow: embedding + reranker
+    on CPU) and saved to cache_path. Next start-ups load it in milliseconds. Delete the file if the legal
+    corpus or the index changes."""
+    path = Path(cache_path) if cache_path else None
     store, lock = {}, threading.Lock()
+    if path and path.exists():
+        try:
+            store.update(json.loads(path.read_text(encoding="utf-8")))
+        except ValueError:
+            pass
 
     def retrieve(query):
+        key = f"{final_k}|{query}"
         with lock:
-            if query in store:
-                return store[query]
+            if key in store:
+                return store[key]
         res = pipe.retrieve(query, final_k=final_k)
         docs = list(res["final"]) if isinstance(res, dict) else list(res)
         with lock:
-            store[query] = docs
+            store[key] = docs
+            if path:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(store, ensure_ascii=False, default=_json_default), encoding="utf-8")
         return docs
     retrieve.cache = store
     return retrieve
 
 
-def warm_up(retriever, requirements):
+def warm_up(retriever, requirements, log=print):
+    """Run the checklist questions through the retriever; returns the failures. Logs timing per question."""
     failed = []
     for r in requirements:
+        t0 = time.perf_counter()
         try:
             retriever(r.verification_question)
+            log(f"[warm-up] {r.requirement_id} {time.perf_counter() - t0:5.1f}s")
         except Exception as exc:
             failed.append((r.requirement_id, type(exc).__name__))
+            log(f"[warm-up] {r.requirement_id} FAILED {type(exc).__name__}")
     return failed
 
 
